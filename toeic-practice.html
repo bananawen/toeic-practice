@@ -27,6 +27,7 @@
 
   <script>
     const questions = [
+      // 原有題目
       {
         text: "Thank you for calling Global Electronics. How may I help you?",
         options: ["I'd like to speak with the manager.", "I'm looking for a new laptop.", "The meeting has been cancelled.", "I'll be there at 2 PM."],
@@ -40,6 +41,69 @@
       {
         text: "What time does the train leave?",
         options: ["It's about ten dollars.", "At 10:30 AM.", "Yes, I have a train ticket.", "The weather is nice."],
+        answer: 1
+      },
+      // 電話對話 (Phone conversations) - 3題
+      {
+        text: "Hello, this is John from ABC Company. May I speak with Ms. Chen please?",
+        options: ["She's in a meeting right now.", "This is she. Who's calling?", "I'll connect you shortly.", "The line is busy."],
+        answer: 1
+      },
+      {
+        text: "I'm sorry, but Mr. Smith is not available at the moment. Would you like to leave a message?",
+        options: ["Yes, please tell him to call me back.", "I'll try again later.", "That's fine, thank you.", "Can you connect me to sales?"],
+        answer: 0
+      },
+      {
+        text: "Thank you for holding. Let me transfer you to our customer service department.",
+        options: ["I need to make a complaint.", "Please hold on.", "Thank you, I appreciate your help.", "I'll wait online."],
+        answer: 2
+      },
+      {
+        text: "Good morning, Tech Support. How can I assist you today?",
+        options: ["My computer is not working properly.", "I want to buy a new computer.", "The store opens at 9 AM.", "I'll visit tomorrow."],
+        answer: 0
+      },
+      // 詢問資訊 (Information requests) - 3題
+      {
+        text: "Excuse me, could you tell me where the conference room is?",
+        options: ["It's on the second floor.", "The meeting starts at 2 PM.", "Yes, I know the way.", "The room is large."],
+        answer: 0
+      },
+      {
+        text: "What are your office hours?",
+        options: ["We open at 8 AM and close at 6 PM.", "The staff is very friendly.", "Yes, we are open today.", "It's about 30 minutes away."],
+        answer: 0
+      },
+      {
+        text: "Do you have any information about the upcoming training program?",
+        options: ["It's scheduled for next week.", "Yes, I can email you the details.", "The program is very popular.", "I attended last year."],
+        answer: 1
+      },
+      {
+        text: "Could you give me directions to the nearest subway station?",
+        options: ["Turn left at the traffic light and walk for five minutes.", "The subway is very convenient.", "I prefer taking a bus.", "It's about a mile from here."],
+        answer: 0
+      },
+      // 建議與意見 (Suggestions and opinions) - 3題
+      {
+        text: "I think we should reschedule the meeting. What do you think?",
+        options: ["I agree, let's move it to next week.", "The meeting room is available.", "Everyone will attend.", "I'll send the invitations."],
+        answer: 0
+      },
+      {
+        text: "Why don't we take a break and continue tomorrow?",
+        options: ["That's a good idea.", "I'm not tired yet.", "We need to finish today.", "The break is too long."],
+        answer: 0
+      },
+      {
+        text: "In my opinion, we should invest more in marketing.",
+        options: ["I see your point, but we have a limited budget.", "The marketing team is excellent.", "Our products are the best.", "Sales have increased recently."],
+        answer: 0
+      },
+      {
+        text: "Have you considered using a different supplier?",
+        options: ["No, we are satisfied with the current one.", "Yes, we're looking into alternatives.", "The supplier is very reliable.", "Prices have gone up."],
         answer: 1
       }
     ];
