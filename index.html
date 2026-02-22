@@ -76,29 +76,28 @@
     let currentQuestion = 0;
     let score = 0;
     let answered = false;
-    let questions = [];
 
-    // Question data
-    questions = [
-      // Part 1: 照片描述
+    // 12 questions: 3 Part1, 3 Part2, 3 Part3, 3 Part4
+    const questions = [
+      // Part 1: 照片描述 (3題) - has images
       { part: 1, image: "part1-q1.jpg", text: "Look at the picture. What do you see?", options: ["People working in a modern office.", "The window is closed.", "There are no documents.", "Employees having lunch."], answer: 0, explanation: "圖片顯示現代辦公室。" },
       { part: 1, image: "part1-q2.jpg", text: "Look at the picture. What do you see?", options: ["A bench in a park near trees.", "The park is empty.", "People playing sports.", "No trees in the area."], answer: 0, explanation: "圖片顯示公園裡有長椅和樹木。" },
       { part: 1, image: "part1-q3.jpg", text: "Look at the picture. What do you see?", options: ["A chef cooking in the kitchen.", "Restaurant is closed.", "Stove is turned off.", "Customers waiting for food."], answer: 0, explanation: "圖片顯示廚師正在烹飪。" },
-      // Part 2: 應答問題
+      // Part 2: 應答問題 (3題) - no images
       { part: 2, question: "Could you pass me the stapler, please?", options: ["Sure, here you go.", "I don't know where it is.", "The meeting starts at 3 PM."], answer: 0, explanation: "這是請求句。" },
       { part: 2, question: "Thank you for helping me with the project.", options: ["You're welcome.", "I need more time.", "Let me check my schedule."], answer: 0, explanation: "這是表達感謝。" },
       { part: 2, question: "Would you like to join us for dinner tonight?", options: ["That sounds great! What time?", "I'm not hungry.", "I had dinner already."], answer: 0, explanation: "這是邀請。" },
-      // Part 3: 簡短對話
+      // Part 3: 簡短對話 (3題) - no images
       { part: 3, text: "W: Hi John, do you have a moment? M: Sure, what's up? W: The client requested some changes. M: That shouldn't be a problem. | Q: What are they discussing?", options: ["A project deadline change", "A new client", "A team party"], answer: 0, explanation: "對話提到客戶要求變更。" },
       { part: 3, text: "W: Excuse me, I reserved a room. M: May I have your name? W: It's under Smith. M: Yes, we have a double room ready. | Q: Where is this?", options: ["At a hotel", "At a restaurant", "At a library"], answer: 0, explanation: "對話提到預訂房間。" },
       { part: 3, text: "M: I'm going to the conference next week. W: What will you do there? M: I'll present our new product. | Q: What will the man do?", options: ["Give a presentation", "Organize the event", "Take notes"], answer: 0, explanation: "男人說他會展示新產品。" },
-      // Part 4: 簡短獨白
+      // Part 4: 簡短獨白 (3題) - no images
       { part: 4, text: "Announcement: The company picnic this Saturday has been postponed to next Sunday due to weather. Please update your calendars. | Q: Why was it postponed?", options: ["Due to weather forecast", "Low attendance", "Budget issues"], answer: 0, explanation: "公告說因為天氣預報。" },
       { part: 4, text: "Museum: We are open from 9 AM to 5 PM, Tuesday to Sunday. Admission is $15 for adults. Flash photography is not allowed. | Q: When is the museum closed?", options: ["On Mondays", "On Sundays", "On holidays"], answer: 0, explanation: "開放時間是週二到週日。" },
       { part: 4, text: "Flight announcement: We are experiencing turbulence due to weather. Please keep your seatbelts fastened. We expect to land on time. | Q: What should passengers do?", options: ["Keep seatbelts fastened", "Stand up", "Move to exit"], answer: 0, explanation: "機長要求乘客繫好安全帶。" }
     ];
 
-    // Shuffle questions
+    // Shuffle
     for (let i = questions.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [questions[i], questions[j]] = [questions[j], questions[i]];
@@ -133,7 +132,7 @@
 
     function loadQuestion() {
       if (currentQuestion >= questions.length) {
-        document.getElementById('quiz').innerHTML = '<div class="question"><h2>🎉 測驗完成！</h2><p>最終得分: ' + score + ' / ' + questions.length + '</p><p class="estimate">' + document.getElementById('scoreEstimate').textContent + '</p><button class="play-btn" onclick="location.reload()">重新開始</button></div>';
+        document.getElementById('quiz').innerHTML = '<div class="question"><h2>🎉 測驗完成！</h2><p>最終得分: ' + score + ' / ' + questions.length + '</p><button class="play-btn" onclick="location.reload()">重新開始</button></div>';
         return;
       }
 
@@ -141,9 +140,13 @@
       const q = questions[currentQuestion];
       const qText = q.question || q.text;
 
-      let html = '<div class="question-image">';
-      if (q.image) html += '<img src="' + q.image + '" alt="Question image" style="max-width:100%; border-radius:8px; margin-bottom:15px;">';
-      html += '</div><div class="question"><h3>題目 ' + (currentQuestion + 1) + ' / ' + questions.length + '</h3>';
+      // Only show image if question has one (Part 1 only)
+      let html = '';
+      if (q.image) {
+        html = '<div class="question-image"><img src="' + q.image + '" alt="Question image" style="max-width:100%; border-radius:8px; margin-bottom:15px;"></div>';
+      }
+      
+      html += '<div class="question"><h3>題目 ' + (currentQuestion + 1) + ' / ' + questions.length + '</h3>';
       html += '<button class="play-btn" onclick="speak(\'' + qText.replace(/'/g, "\\'") + '\')">🔊 播放題目</button>';
       html += '<div class="options">';
       for (let i = 0; i < q.options.length; i++) {
@@ -169,13 +172,11 @@
         buttons[q.answer].classList.add('correct');
       }
 
-      // Show explanation
       const expDiv = document.createElement('div');
       expDiv.className = 'explanation';
       expDiv.innerHTML = '<strong>📝 解析：</strong>' + q.explanation;
       document.querySelector('.question').appendChild(expDiv);
 
-      // Update
       currentQuestion++;
       updateDisplay();
 
@@ -184,114 +185,6 @@
       }, 3000);
     }
   </script>
-  <script>
-    let speechRate = 0.8;
-    
-    function updateSpeed() {
-      speechRate = parseFloat(document.getElementById('speedSlider').value);
-      document.getElementById('speedValue').textContent = speechRate.toFixed(1);
-    }
-
-    const questions = [
-      // Part 1: 照片描述 (3題)
-      {
-        part: 1,
-        image: "part1-q1.jpg",
-        text: "Look at the picture. What do you see?",
-        options: ["People working in a modern office.", "The window is closed.", "There are no documents.", "Employees having lunch."],
-        answer: 0,
-        explanation: "圖片顯示現代辦公室。"
-      },
-      {
-        part: 1,
-        image: "part1-q2.jpg",
-        text: "Look at the picture. What do you see?",
-        options: ["A bench in a park near trees.", "The park is empty.", "People playing sports.", "No trees in the area."],
-        answer: 0,
-        explanation: "圖片顯示公園裡有長椅和樹木。"
-      },
-      {
-        part: 1,
-        image: "part1-q3.jpg",
-        text: "Look at the picture. What do you see?",
-        options: ["A chef cooking in the kitchen.", "Restaurant is closed.", "Stove is turned off.", "Customers waiting for food."],
-        answer: 0,
-        explanation: "圖片顯示廚師正在烹飪。"
-      },
-      // Part 2: 應答問題 (3題)
-      {
-        part: 2,
-        question: "Could you pass me the stapler, please?",
-        options: ["Sure, here you go.", "I don't know where it is.", "The meeting starts at 3 PM."],
-        answer: 0,
-        explanation: "這是請求句。選項A是禮貌的回應。"
-      },
-      {
-        part: 2,
-        question: "Thank you for helping me with the project.",
-        options: ["You're welcome.", "I need more time.", "Let me check my schedule."],
-        answer: 0,
-        explanation: "這是表達感謝。選項A是標準回應。"
-      },
-      {
-        part: 2,
-        question: "Would you like to join us for dinner tonight?",
-        options: ["That sounds great! What time?", "I'm not hungry.", "I had dinner already."],
-        answer: 0,
-        explanation: "這是邀請。選項A接受並詢問時間。"
-      },
-      // Part 3: 簡短對話 (3題)
-      {
-        part: 3,
-        text: "W: Hi John, do you have a moment? M: Sure, what's up? W: The client requested some changes. M: That shouldn't be a problem. | Q: What are they discussing?",
-        options: ["A project deadline change", "A new client", "A team party"],
-        answer: 0,
-        explanation: "對話提到客戶要求變更。"
-      },
-      {
-        part: 3,
-        text: "W: Excuse me, I reserved a room. M: May I have your name? W: It's under Smith. M: Yes, we have a double room ready. | Q: Where is this?",
-        options: ["At a hotel", "At a restaurant", "At a library"],
-        answer: 0,
-        explanation: "對話提到預訂房間。"
-      },
-      {
-        part: 3,
-        text: "M: I'm going to the conference next week. W: What will you do there? M: I'll present our new product. | Q: What will the man do?",
-        options: ["Give a presentation", "Organize the event", "Take notes"],
-        answer: 0,
-        explanation: "男人說他會展示新產品。"
-      },
-      // Part 4: 簡短獨白 (3題)
-      {
-        part: 4,
-        text: "Announcement: The company picnic this Saturday has been postponed to next Sunday due to weather. Please update your calendars. | Q: Why was it postponed?",
-        options: ["Due to weather forecast", "Low attendance", "Budget issues"],
-        answer: 0,
-        explanation: "公告說因為天氣預報。"
-      },
-      {
-        part: 4,
-        text: "Museum: We are open from 9 AM to 5 PM, Tuesday to Sunday. Admission is $15 for adults. Flash photography is not allowed. | Q: When is the museum closed?",
-        options: ["On Mondays", "On Sundays", "On holidays"],
-        answer: 0,
-        explanation: "開放時間是週二到週日。"
-      },
-      {
-        part: 4,
-        text: "Flight announcement: We are experiencing turbulence due to weather. Please keep your seatbelts fastened. We expect to land on time. | Q: What should passengers do?",
-        options: ["Keep seatbelts fastened", "Stand up", "Move to exit"],
-        answer: 0,
-        explanation: "機長要求乘客繫好安全帶。"
-      }
-    ];
-
-    let currentQuestion = 0;
-    let score = 0;
-    let answered = false;
-
-    // 隨機排序題目
-    function shuffleArray(array) {
       for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
