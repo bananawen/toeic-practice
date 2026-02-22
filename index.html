@@ -186,6 +186,12 @@
       return array;
     }
     shuffleArray(questions);
+    
+    // 初始化
+    currentQuestion = 0;
+    score = 0;
+    updateProgress();
+    updateScore();
 
     function speak(text) {
       const utterance = new SpeechSynthesisUtterance(text);
@@ -204,13 +210,13 @@
       document.getElementById('currentScore').textContent = score;
       document.getElementById('totalQuestions').textContent = questions.length;
       
-      // 計算正確率
-      const total = currentQuestion > 0 ? currentQuestion : 1;
-      const percentage = Math.round((score / total) * 100);
-      
-      // 預估分數
-      const estimate = Math.round(200 + (percentage * 7.9));
-      document.getElementById('scoreEstimate').textContent = '預估多益分數: ' + estimate + ' - ' + (estimate + 45) + ' 分';
+      if (currentQuestion > 0) {
+        const percentage = Math.round((score / currentQuestion) * 100);
+        const estimate = Math.round(200 + (percentage * 7.9));
+        document.getElementById('scoreEstimate').textContent = '預估多益分數: ' + estimate + ' - ' + (estimate + 45) + ' 分';
+      } else {
+        document.getElementById('scoreEstimate').textContent = '預估多益分數: ---';
+      }
     }
 
     function loadQuestion() {
