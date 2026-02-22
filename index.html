@@ -76,9 +76,6 @@
     
     function updateSpeed() {
       speechRate = parseFloat(document.getElementById('speedSlider').value);
-      document.getElementById('speedValue').textContent = speechRate.toFixed(1);
-    }
-
     const questions = [
       // Part 1: 照片描述 (3題)
       {
@@ -105,47 +102,47 @@
         answer: 0,
         explanation: "圖片顯示廚師正在烹飪。"
       },
-      // Part 2: 應答問題 (3題)
+      // Part 2: 應答問題 (3題) - 正確格式：聽問題，選正確回應
       {
         part: 2,
-        text: "Could you pass me the stapler, please?",
-        options: ["Sure, here you go.", "I don't know where it is.", "The meeting starts at 3 PM.", "I'll email you later."],
+        question: "Could you pass me the stapler, please?",
+        options: ["Sure, here you go.", "I don't know where it is.", "The meeting starts at 3 PM."],
         answer: 0,
-        explanation: "這句話是請求遞東西。選項A是禮貌的回應。"
+        explanation: "這是請求句。選項A「Sure, here you go.」是禮貌的回應。"
       },
       {
         part: 2,
-        text: "Thank you for helping me with the project.",
-        options: ["You're welcome.", "I need more time.", "Let me check my schedule.", "That's not my responsibility."],
+        question: "Thank you for helping me with the project.",
+        options: ["You're welcome.", "I need more time.", "Let me check my schedule."],
         answer: 0,
-        explanation: "這是表達感謝。選項A是標準回應。"
+        explanation: "這是表達感謝。選項A「You're welcome.」是標準回應。"
       },
       {
         part: 2,
-        text: "I'm calling to inquire about your product prices.",
-        options: ["I'll transfer you to our sales department.", "Please speak more slowly.", "We're closed on Sundays.", "Don't mention it."],
+        question: "Would you like to join us for dinner tonight?",
+        options: ["That sounds great! What time?", "I'm not hungry.", "I had dinner already."],
         answer: 0,
-        explanation: "這句話是詢問價格。選項A是正確回應。"
+        explanation: "這是邀請。選項A接受並詢問時間，是正確回應。"
       },
       // Part 3: 簡短對話 (3題)
       {
         part: 3,
         text: "W: Hi John, do you have a moment? M: Sure, what's up? W: The client requested some changes. M: That shouldn't be a problem. | Q: What are they discussing?",
-        options: ["A project deadline change", "A new client", "A team party", "A budget increase"],
+        options: ["A project deadline change", "A new client", "A team party"],
         answer: 0,
         explanation: "對話中提到客戶要求變更，所以是討論項目截止日期的變更。"
       },
       {
         part: 3,
         text: "W: Excuse me, I reserved a room. M: May I have your name? W: It's under Smith. M: Yes, we have a double room ready. | Q: Where is this?",
-        options: ["At a hotel", "At a restaurant", "At a library", "At a gym"],
+        options: ["At a hotel", "At a restaurant", "At a library"],
         answer: 0,
         explanation: "對話提到預訂房間和雙人房，這是發生在飯店。"
       },
       {
         part: 3,
         text: "M: I'm going to the conference next week. W: What will you do there? M: I'll present our new product. | Q: What will the man do?",
-        options: ["Give a presentation", "Organize the event", "Take notes", "Interview people"],
+        options: ["Give a presentation", "Organize the event", "Take notes"],
         answer: 0,
         explanation: "男人說他會展示新產品，所以是進行簡報。"
       },
@@ -153,20 +150,25 @@
       {
         part: 4,
         text: "Announcement: The company picnic this Saturday has been postponed to next Sunday due to weather. Please update your calendars. | Q: Why was it postponed?",
-        options: ["Due to weather forecast", "Low attendance", "Budget issues", "Venue problems"],
+        options: ["Due to weather forecast", "Low attendance", "Budget issues"],
         answer: 0,
         explanation: "公告說因為天氣預報，所以延期。"
       },
       {
         part: 4,
         text: "Museum: We are open from 9 AM to 5 PM, Tuesday to Sunday. Admission is $15 for adults. Flash photography is not allowed. | Q: When is the museum closed?",
-        options: ["On Mondays", "On Sundays", "On holidays", "Never"],
+        options: ["On Mondays", "On Sundays", "On holidays"],
         answer: 0,
         explanation: "開放時間是週二到週日，所以週一閉館。"
       },
       {
         part: 4,
         text: "Flight announcement: We are experiencing turbulence due to weather. Please keep your seatbelts fastened. We expect to land on time. | Q: What should passengers do?",
+        options: ["Keep seatbelts fastened", "Stand up", "Move to exit"],
+        answer: 0,
+        explanation: "機長要求乘客繫好安全帶並留在座位上。"
+      }
+    ];
         options: ["Keep seatbelts fastened", "Stand up", "Move to exit", "Request help"],
         answer: 0,
         explanation: "機長要求乘客繫好安全帶並留在座位上。"
@@ -484,7 +486,7 @@
 
         <div class="question">
           <h3>題目 ${currentQuestion + 1} / ${questions.length}</h3>
-          <button class="play-btn" onclick="speak('${q.text}')">🔊 播放題目</button>
+          <button class="play-btn" onclick="speak('${q.question || q.text}')">🔊 播放題目</button>
           <div class="options" id="optionsContainer">
             ${q.options.map((opt, i) => 
               `<button onclick="checkAnswer(${i})" id="opt${i}">${String.fromCharCode(65+i)}. ${opt}</button>`
