@@ -1,0 +1,36 @@
+{
+  "vocabulary": [
+    {"word": "schedule", "translation": "日程表", "example": "Please check your schedule for the meeting.", "level": 1, "toeicScore": "200-400"},
+    {"word": "deadline", "translation": "截止日期", "example": "The deadline for submitting the report is next Friday.", "level": 1, "toeicScore": "200-400"},
+    {"word": "meeting", "translation": "會議", "example": "We have a team meeting at 3 PM.", "level": 1, "toeicScore": "200-400"},
+    {"word": "office", "translation": "辦公室", "example": "I work in the downtown office.", "level": 1, "toeicScore": "200-400"},
+    {"word": "email", "translation": "電子郵件", "example": "Please send me an email when you arrive.", "level": 1, "toeicScore": "200-400"},
+    {"word": "project", "translation": "專案", "example": "The project will be completed next month.", "level": 1, "toeicScore": "200-400"},
+    {"word": "report", "translation": "報告", "example": "The manager asked for a detailed report.", "level": 1, "toeicScore": "200-400"},
+    {"word": "employee", "translation": "員工", "example": "The company hired ten new employees.", "level": 1, "toeicScore": "200-400"},
+    {"word": "client", "translation": "客戶", "example": "We need to satisfy our clients' needs.", "level": 1, "toeicScore": "200-400"},
+    {"word": "department", "translation": "部門", "example": "She works in the marketing department.", "level": 1, "toeicScore": "200-400"},
+    
+    {"word": "revenue", "translation": "營收", "example": "The company's revenue increased by 20%.", "level": 2, "toeicScore": "405-600"},
+    {"word": "target", "translation": "目標", "example": "We need to reach our sales target.", "level": 2, "toeicScore": "405-600"},
+    {"word": "budget", "translation": "預算", "example": "The project is within budget.", "level": 2, "toeicScore": "405-600"},
+    {"word": "proposal", "translation": "提案", "example": "I submitted a proposal for the new project.", "level": 2, "toeicScore": "405-600"},
+    {"word": "contract", "translation": "合約", "example": "They signed a three-year contract.", "level": 2, "toeicScore": "405-600"},
+    {"word": "strategy", "translation": "策略", "example": "We need a new marketing strategy.", "level": 2, "toeicScore": "405-600"},
+    {"word": "executive", "translation": "主管", "example": "The executive approved the plan.", "level": 2, "toeicScore": "405-600"},
+    {"word": "investment", "translation": "投資", "example": "Foreign investment has increased.", "level": 2, "toeicScore": "405-600"},
+    {"word": "negotiate", "translation": "談判", "example": "We need to negotiate the terms.", "level": 2, "toeicScore": "405-600"},
+    {"word": "performance", "translation": "表現", "example": "The company's performance exceeded expectations.", "level": 2, "toeicScore": "405-600"},
+    
+    {"word": "comprehensive", "translation": "全面的", "example": "The report provides a comprehensive analysis.", "level": 3, "toeicScore": "605-990"},
+    {"word": "substantial", "translation": "大量的", "example": "We made a substantial profit this year.", "level": 3, "toeicScore": "605-990"},
+    {"word": "implementation", "translation": "實施", "example": "The implementation of the plan will take months.", "level": 3, "toeicScore": "605-990"},
+    {"word": "methodology", "translation": "方法論", "example": "We need a clear methodology for the research.", "level": 3, "toeicScore": "605-990"},
+    {"word": "accountability", "translation": "責任", "example": "Each manager has clear accountability.", "level": 3, "toeicScore": "605-990"},
+    {"word": "sustainability", "translation": "永續性", "example": "Sustainability is a key concern for the company.", "level": 3, "toeicScore": "605-990"},
+    {"word": "preliminary", "translation": "初步的", "example": "The preliminary results are promising.", "level": 3, "toeicScore": "605-990"},
+    {"word": "leverage", "translation": "槓桿/利用", "example": "We can leverage our resources to expand.", "level": 3, "toeicScore": "605-990"},
+    {"word": "diversification", "translation": "多元化", "example": "The company plans diversification into new markets.", "level": 3, "toeicScore": "605-990"},
+    {"word": "profitability", "translation": "獲利能力", "example": "The profitability of the project is uncertain.", "level": 3, "toeicScore": "605-990"}
+  ]
+}

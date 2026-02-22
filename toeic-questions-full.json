@@ -1,0 +1,718 @@
+{
+  "questions": [
+    {
+      "part": 1,
+      "question": "A man is walking on a city street carrying a briefcase.",
+      "options": [
+        "A man is walking down the street with a briefcase.",
+        "A man is sitting on a bench waiting for someone.",
+        "A woman is running in the park.",
+        "A man is driving a car on the highway."
+      ],
+      "answer": 0,
+      "explanation": "The photograph shows a man walking on a city street carrying a briefcase. Option A correctly describes this action.",
+      "difficulty": 2,
+      "toeicScore": "200-400"
+    },
+    {
+      "part": 1,
+      "question": "Two women are sitting at a table in a restaurant having coffee.",
+      "options": [
+        "Two women are having lunch at a restaurant.",
+        "Two women are sitting at a table drinking coffee.",
+        "Two men are working in an office.",
+        "A woman is cooking in the kitchen."
+      ],
+      "answer": 1,
+      "explanation": "The image shows two women seated at a table, and they appear to be drinking coffee. Option B accurately describes the scene.",
+      "difficulty": 2,
+      "toeicScore": "200-400"
+    },
+    {
+      "part": 1,
+      "question": "A group of people are standing in front of a building waiting for a tour.",
+      "options": [
+        "Workers are building a new office building.",
+        "A group of people are waiting for a tour to begin.",
+        "Students are playing sports in a park.",
+        "Customers are shopping at a mall."
+      ],
+      "answer": 1,
+      "explanation": "The photograph shows a group of people standing in front of a building, appearing to wait for something - likely a tour.",
+      "difficulty": 3,
+      "toeicScore": "200-400"
+    },
+    {
+      "part": 1,
+      "question": "The woman is typing on her laptop while sitting at a desk.",
+      "options": [
+        "The woman is reading a book at her desk.",
+        "The woman is typing on her laptop computer.",
+        "The woman is making a phone call.",
+        "The woman is sleeping on the couch."
+      ],
+      "answer": 1,
+      "explanation": "The photograph clearly shows a woman sitting at a desk using a laptop. Option B is the correct description.",
+      "difficulty": 1,
+      "toeicScore": "200-400"
+    },
+    {
+      "part": 1,
+      "question": "Several boxes are stacked on shelves in a warehouse.",
+      "options": [
+        "The shelves in the store are empty.",
+        "There are many boxes stored on the shelves.",
+        "Workers are unpacking boxes in a factory.",
+        "The products are on display in a shop."
+      ],
+      "answer": 1,
+      "explanation": "The image shows boxes neatly stacked on shelves, indicating storage. Option B correctly describes this.",
+      "difficulty": 3,
+      "toeicScore": "200-400"
+    },
+    {
+      "part": 1,
+      "question": "The chef is preparing food in a professional kitchen with modern equipment.",
+      "options": [
+        "The cook is serving customers at a restaurant.",
+        "The chef is cooking in a well-equipped kitchen.",
+        "The waiter is taking orders from guests.",
+        "The baker is making cakes in a bakery."
+      ],
+      "answer": 1,
+      "explanation": "The photograph shows a chef in a kitchen environment with professional equipment. Option B accurately describes this.",
+      "difficulty": 4,
+      "toeicScore": "405-600"
+    },
+    {
+      "part": 2,
+      "question": "Where is the conference room?",
+      "options": [
+        "It's on the second floor.",
+        "The meeting starts at 2 PM.",
+        "Yes, I know where it is.",
+        "No, I haven't been there."
+      ],
+      "answer": 0,
+      "explanation": "The question asks for a location, so Option A (on the second floor) provides the correct location information.",
+      "difficulty": 2,
+      "toeicScore": "200-400"
+    },
+    {
+      "part": 2,
+      "question": "Did you send the report to Mr. Johnson?",
+      "options": [
+        "Yes, I sent it this morning.",
+        "The report is very detailed.",
+        "I don't have Johnson's email.",
+        "Mr. Johnson is traveling."
+      ],
+      "answer": 0,
+      "explanation": "This is a yes/no question about a past action. Option A provides the appropriate response confirming the action was completed.",
+      "difficulty": 2,
+      "toeicScore": "200-400"
+    },
+    {
+      "part": 2,
+      "question": "Can you finish the presentation by Friday?",
+      "options": [
+        "Yes, I think so.",
+        "The presentation is interesting.",
+        "I don't like presentations.",
+        "Friday is my day off."
+      ],
+      "answer": 0,
+      "explanation": "This is a question about ability and time. Option A is the appropriate response indicating whether the task can be completed.",
+      "difficulty": 3,
+      "toeicScore": "200-400"
+    },
+    {
+      "part": 2,
+      "question": "What time does the train to Boston leave?",
+      "options": [
+        "It leaves at 3:30 PM.",
+        "The train is very comfortable.",
+        "I went to Boston last week.",
+        "Boston is a big city."
+      ],
+      "answer": 0,
+      "explanation": "The question asks for specific information about departure time. Option A provides the exact time requested.",
+      "difficulty": 3,
+      "toeicScore": "200-400"
+    },
+    {
+      "part": 2,
+      "question": "Would you like some more coffee?",
+      "options": [
+        "No thank you, I've had enough.",
+        "Coffee is my favorite drink.",
+        "The coffee is very hot.",
+        "I prefer tea to coffee."
+      ],
+      "answer": 0,
+      "explanation": "This is an offer question. Option A appropriately accepts or declines the offer.",
+      "difficulty": 2,
+      "toeicScore": "200-400"
+    },
+    {
+      "part": 2,
+      "question": "Why was the meeting postponed until next week?",
+      "options": [
+        "Because the CEO had a scheduling conflict.",
+        "The meeting was very productive.",
+        "Everyone attended the meeting.",
+        "Next week is very busy."
+      ],
+      "answer": 0,
+      "explanation": "This question asks for a reason. Option A provides the causal explanation for the postponement.",
+      "difficulty": 5,
+      "toeicScore": "405-600"
+    },
+    {
+      "part": 3,
+      "question": "What is the woman's job title?",
+      "options": [
+        "She is a marketing manager.",
+        "She has worked here for 5 years.",
+        "The office is on the 5th floor.",
+        "She reports to the director."
+      ],
+      "answer": 0,
+      "explanation": "The conversation indicates she is the marketing manager based on her responsibilities and department.",
+      "difficulty": 4,
+      "toeicScore": "405-600"
+    },
+    {
+      "part": 3,
+      "question": "When will the project be completed?",
+      "options": [
+        "By the end of this month.",
+        "The project is very important.",
+        "Ten people are working on it.",
+        "It started last week."
+      ],
+      "answer": 0,
+      "explanation": "The conversation mentions the project deadline as the end of the current month.",
+      "difficulty": 4,
+      "toeicScore": "405-600"
+    },
+    {
+      "part": 3,
+      "question": "Where did the conversation most likely take place?",
+      "options": [
+        "At a hotel front desk.",
+        "In a restaurant.",
+        "At an airport.",
+        "In a clothing store."
+      ],
+      "answer": 0,
+      "explanation": "The conversation mentions checking in, room keys, and floor numbers, indicating a hotel reception.",
+      "difficulty": 5,
+      "toeicScore": "405-600"
+    },
+    {
+      "part": 3,
+      "question": "What does the man ask the woman to do?",
+      "options": [
+        "Send him the updated report.",
+        "Call the client tomorrow.",
+        "Schedule a meeting.",
+        "Prepare a presentation."
+      ],
+      "answer": 0,
+      "explanation": "The man specifically requests the woman to send him the updated report by email.",
+      "difficulty": 5,
+      "toeicScore": "405-600"
+    },
+    {
+      "part": 3,
+      "question": "What problem is discussed in the conversation?",
+      "options": [
+        "A delivery delay.",
+        "A billing error.",
+        "A product defect.",
+        "A staff shortage."
+      ],
+      "answer": 0,
+      "explanation": "The conversation focuses on a delay in the shipment delivery and its impact on the project timeline.",
+      "difficulty": 6,
+      "toeicScore": "405-600"
+    },
+    {
+      "part": 4,
+      "question": "What is this announcement about?",
+      "options": [
+        "A flight delay.",
+        "A security alert.",
+        "A gate change.",
+        "A boarding update."
+      ],
+      "answer": 2,
+      "explanation": "The announcement informs passengers that their flight gate has changed from B12 to A24.",
+      "difficulty": 4,
+      "toeicScore": "405-600"
+    },
+    {
+      "part": 4,
+      "question": "Who is the speaker?",
+      "options": [
+        "A hotel manager.",
+        "A tour guide.",
+        "A conference organizer.",
+        "A restaurant host."
+      ],
+      "answer": 1,
+      "explanation": "The speaker introduces the tour schedule, meeting points, and provides historical information about the location.",
+      "difficulty": 5,
+      "toeicScore": "405-600"
+    },
+    {
+      "part": 4,
+      "question": "What should employees do to enroll in the program?",
+      "options": [
+        "Fill out an online form by Friday.",
+        "Contact HR in person.",
+        "Submit their request by email.",
+        "Ask their supervisor for approval."
+      ],
+      "answer": 0,
+      "explanation": "The announcement states that employees must complete the online enrollment form before the Friday deadline.",
+      "difficulty": 6,
+      "toeicScore": "405-600"
+    },
+    {
+      "part": 4,
+      "question": "What is the main purpose of this announcement?",
+      "options": [
+        "To announce a new policy.",
+        "To invite applications for a position.",
+        "To inform about office renovation.",
+        "To announce a company merger."
+      ],
+      "answer": 1,
+      "explanation": "The talk describes the job requirements, benefits, and application process, indicating it's a job posting announcement.",
+      "difficulty": 6,
+      "toeicScore": "405-600"
+    },
+    {
+      "part": 4,
+      "question": "What time does the seminar begin?",
+      "options": [
+        "At 2:00 PM in Conference Room B.",
+        "At 10:00 AM in the main hall.",
+        "At 3:30 PM in Room 302.",
+        "At 1:00 PM in the auditorium."
+      ],
+      "answer": 0,
+      "explanation": "The announcement clearly states the seminar will begin at 2:00 PM in Conference Room B.",
+      "difficulty": 5,
+      "toeicScore": "405-600"
+    },
+    {
+      "part": 5,
+      "question": "The marketing team ___ a new campaign launch next month.",
+      "options": [
+        "is planning",
+        "are planning",
+        "planning",
+        "plan"
+      ],
+      "answer": 1,
+      "explanation": "When using collective nouns like 'team' with American English, singular verb agreement is often used. However, in this context with 'team' as a group acting together, 'are planning' is acceptable.",
+      "difficulty": 4,
+      "toeicScore": "405-600"
+    },
+    {
+      "part": 5,
+      "question": "Please make sure to ___ the lights before leaving the office.",
+      "options": [
+        "turn off",
+        "turning off",
+        "to turn off",
+        "turned off"
+      ],
+      "answer": 0,
+      "explanation": "After 'make sure to' (not 'make sure'), we use the infinitive form. However, in imperative sentences, the base form 'turn off' is correct.",
+      "difficulty": 3,
+      "toeicScore": "200-400"
+    },
+    {
+      "part": 5,
+      "question": "If I ___ more time, I would have finished the project.",
+      "options": [
+        "have",
+        "had",
+        "had had",
+        "would have"
+      ],
+      "answer": 2,
+      "explanation": "This is a third conditional sentence. The correct form is 'If I had had more time' to express a hypothetical past situation.",
+      "difficulty": 7,
+      "toeicScore": "605-800"
+    },
+    {
+      "part": 5,
+      "question": "The report ___ by the committee last week.",
+      "options": [
+        "was approved",
+        "approved",
+        "has approved",
+        "approve"
+      ],
+      "answer": 0,
+      "explanation": "The sentence requires a passive voice construction. Since it refers to a past action, 'was approved' is correct.",
+      "difficulty": 4,
+      "toeicScore": "405-600"
+    },
+    {
+      "part": 5,
+      "question": "She speaks English ___ than her brother.",
+      "options": [
+        "more fluent",
+        "more fluently",
+        "fluenter",
+        "most fluently"
+      ],
+      "answer": 1,
+      "explanation": "When comparing adverb forms with 'than', we use 'more + adverb' (more fluently), not the adjective form.",
+      "difficulty": 5,
+      "toeicScore": "405-600"
+    },
+    {
+      "part": 5,
+      "question": "The company announced ___ expansion into Asian markets.",
+      "options": [
+        "its",
+        "it's",
+        "their",
+        "them"
+      ],
+      "answer": 0,
+      "explanation": "'Its' is the possessive form of 'it' (possessive pronoun). 'It's' means 'it is'. The sentence requires a possessive to modify 'expansion'.",
+      "difficulty": 3,
+      "toeicScore": "200-400"
+    },
+    {
+      "part": 6,
+      "question": "Dear Mr. Smith,\n\nThank you for your inquiry about our products. We are pleased to offer you a 20% discount on your first order. This offer is valid ___ the end of this month.\n\nBest regards,\nSales Team",
+      "options": [
+        "until",
+        "by",
+        "from",
+        "since"
+      ],
+      "answer": 0,
+      "explanation": "'Until' means 'up to' a certain time. The discount is valid up to the end of the month, making 'until' the correct choice.",
+      "difficulty": 5,
+      "toeicScore": "405-600"
+    },
+    {
+      "part": 6,
+      "question": "We regret to inform you that your application ___ been successful. The position has been filled by another candidate.",
+      "options": [
+        "has not",
+        "have not",
+        "has",
+        "have"
+      ],
+      "answer": 0,
+      "explanation": "The subject 'your application' is singular, so it requires 'has not been'. The sentence is in present perfect passive.",
+      "difficulty": 6,
+      "toeicScore": "405-600"
+    },
+    {
+      "part": 6,
+      "question": "The new software allows users to ___ documents more efficiently.",
+      "options": [
+        "share",
+        "sharing",
+        "shared",
+        "to share"
+      ],
+      "answer": 0,
+      "explanation": "After 'allows someone to' or 'allows something to', we use the base form of the verb. 'To share' would require 'allows users to share'.",
+      "difficulty": 4,
+      "toeicScore": "405-600"
+    },
+    {
+      "part": 6,
+      "question": "Our department will be moving ___ the new building next Monday.",
+      "options": [
+        "to",
+        "into",
+        "onto",
+        "at"
+      ],
+      "answer": 1,
+      "explanation": "'Move into' is the correct collocation when referring to relocating to a new building or space.",
+      "difficulty": 5,
+      "toeicScore": "405-600"
+    },
+    {
+      "part": 6,
+      "question": "The CEO emphasized ___ the importance of meeting deadlines.",
+      "options": [
+        "on",
+        "in",
+        "at",
+        "upon"
+      ],
+      "answer": 3,
+      "explanation": "'Emphasize upon' is a less common but correct phrase meaning to stress or give special importance to something.",
+      "difficulty": 7,
+      "toeicScore": "605-800"
+    },
+    {
+      "part": 7,
+      "question": "What is the main purpose of this email?",
+      "options": [
+        "To schedule a meeting.",
+        "To complain about a product.",
+        "To confirm an order.",
+        "To request information."
+      ],
+      "answer": 0,
+      "explanation": "The email clearly states the purpose: to propose meeting times to discuss the quarterly report.",
+      "difficulty": 4,
+      "toeicScore": "405-600"
+    },
+    {
+      "part": 7,
+      "question": "According to the passage, when will the new policy take effect?",
+      "options": [
+        "January 1st",
+        "March 15th",
+        "Immediately",
+        "At the end of the year"
+      ],
+      "answer": 1,
+      "explanation": "The text states the new policy will be implemented starting March 15th after the review period.",
+      "difficulty": 5,
+      "toeicScore": "405-600"
+    },
+    {
+      "part": 7,
+      "question": "What can be inferred about the company's financial situation?",
+      "options": [
+        "They are experiencing growth.",
+        "They are facing bankruptcy.",
+        "They have reduced staff.",
+        "They are expanding overseas."
+      ],
+      "answer": 0,
+      "explanation": "The report mentions increased revenue, new client acquisitions, and positive projections, indicating financial growth.",
+      "difficulty": 6,
+      "toeicScore": "405-600"
+    },
+    {
+      "part": 7,
+      "question": "What does the word 'proactive' most nearly mean in context?",
+      "options": [
+        "Reactive",
+        "Preventive",
+        "Passive",
+        "Indifferent"
+      ],
+      "answer": 1,
+      "explanation": "In the business context, 'proactive' means taking preventive action before problems occur, similar to 'preventive'.",
+      "difficulty": 7,
+      "toeicScore": "605-800"
+    },
+    {
+      "part": 7,
+      "question": "Who should be contacted for more information about the internship program?",
+      "options": [
+        "The HR department at careers@company.com",
+        "The marketing team at marketing@company.com",
+        "The director at director@company.com",
+        "The website administrator at web@company.com"
+      ],
+      "answer": 0,
+      "explanation": "The passage clearly states that all inquiries about the internship should be directed to the HR department via email.",
+      "difficulty": 4,
+      "toeicScore": "405-600"
+    },
+    {
+      "part": 7,
+      "question": "Based on the advertisement, what is NOT a requirement for the position?",
+      "options": [
+        "Work experience",
+        "Master's degree",
+        "Language skills",
+        "Computer proficiency"
+      ],
+      "answer": 1,
+      "explanation": "The job posting lists a bachelor's degree (not master's), two years experience, language requirements, and computer skills. Only a master's degree is not mentioned as required.",
+      "difficulty": 6,
+      "toeicScore": "405-600"
+    },
+    {
+      "part": 7,
+      "question": "What is the primary topic of this article?",
+      "options": [
+        "Climate change effects on businesses.",
+        "New government environmental regulations.",
+        "Sustainable business practices.",
+        "Renewable energy technology."
+      ],
+      "answer": 2,
+      "explanation": "The article primarily discusses how companies are implementing sustainable practices to reduce environmental impact.",
+      "difficulty": 5,
+      "toeicScore": "405-600"
+    },
+    {
+      "part": 7,
+      "question": "The author's tone in this passage could best be described as",
+      "options": [
+        "critical",
+        "objective",
+        "sarcastic",
+        "enthusiastic"
+      ],
+      "answer": 1,
+      "explanation": "The passage presents factual information about the topic without expressing personal opinions or strong emotions, indicating an objective tone.",
+      "difficulty": 7,
+      "toeicScore": "605-800"
+    },
+    {
+      "part": 5,
+      "question": "Hardly ___ arrived at the office when the meeting started.",
+      "options": [
+        "I had",
+        "had I",
+        "I have",
+        "have I"
+      ],
+      "answer": 1,
+      "explanation": "When using 'hardly...when' in inverted structure, we invert the subject and auxiliary: 'Hardly had I arrived'.",
+      "difficulty": 8,
+      "toeicScore": "605-800"
+    },
+    {
+      "part": 5,
+      "question": "Not only ___ the project on time, but it also exceeded expectations.",
+      "options": [
+        "they completed",
+        "did they complete",
+        "they complete",
+        "they have completed"
+      ],
+      "answer": 1,
+      "explanation": "Inversion is required after 'not only'. The correct form is 'did they complete' (auxiliary inversion).",
+      "difficulty": 8,
+      "toeicScore": "605-800"
+    },
+    {
+      "part": 6,
+      "question": "The board decided to postpone the decision, ___ to revisit it next quarter.",
+      "options": [
+        "however",
+        "instead",
+        "nevertheless",
+        "rather"
+      ],
+      "answer": 0,
+      "explanation": "'However' is used to contrast ideas. The sentence means they postponed but will revisit later.",
+      "difficulty": 8,
+      "toeicScore": "605-800"
+    },
+    {
+      "part": 7,
+      "question": "The author uses the phrase 'tip of the iceberg' to suggest that",
+      "options": [
+        "the problem is small and easily solved",
+        "the visible issue represents only a small part of a larger problem",
+        "the company will recover quickly",
+        "the situation is improving dramatically"
+      ],
+      "answer": 1,
+      "explanation": "The idiom 'tip of the iceberg' means only a small visible portion of a much larger problem or situation.",
+      "difficulty": 8,
+      "toeicScore": "605-800"
+    },
+    {
+      "part": 5,
+      "question": "The manager, along with her team members, ___ responsible for the success of the project.",
+      "options": [
+        "are",
+        "is",
+        "were",
+        "have been"
+      ],
+      "answer": 1,
+      "explanation": "When using 'along with', the subject remains singular. The manager (singular) is the subject, so 'is' is correct.",
+      "difficulty": 7,
+      "toeicScore": "605-800"
+    },
+    {
+      "part": 6,
+      "question": "Had the company ___ adequate insurance, the damages would have been covered.",
+      "options": [
+        "purchased",
+        "to purchase",
+        "purchase",
+        "purchasing"
+      ],
+      "answer": 0,
+      "explanation": "This is a conditional sentence with 'Had' at the beginning (inversion of 'If the company had purchased'). Past perfect is needed.",
+      "difficulty": 9,
+      "toeicScore": "805-990"
+    },
+    {
+      "part": 7,
+      "question": "According to the passage, all of the following are true EXCEPT:",
+      "options": [
+        "The new product line launches in Q3",
+        "Revenue increased by 15%",
+        "The company expanded to Europe",
+        "Three new executives were hired"
+      ],
+      "answer": 2,
+      "explanation": "The passage mentions Q3 launch, 15% revenue increase, and three new hires, but does not mention expansion to Europe.",
+      "difficulty": 9,
+      "toeicScore": "805-990"
+    },
+    {
+      "part": 4,
+      "question": "What does the speaker imply about the upcoming changes?",
+      "options": [
+        "They will be optional for staff",
+        "They will be implemented immediately",
+        "They will require additional training",
+        "They have been postponed indefinitely"
+      ],
+      "answer": 2,
+      "explanation": "The speaker mentions that workshops will be provided, implying that additional training will be necessary for the changes.",
+      "difficulty": 9,
+      "toeicScore": "805-990"
+    },
+    {
+      "part": 5,
+      "question": "Seldom ___ such an dedicated employee who consistently exceeds expectations.",
+      "options": [
+        "we have seen",
+        "have we seen",
+        "we have saw",
+        "seen we have"
+      ],
+      "answer": 1,
+      "explanation": "Inversion is required after 'seldom'. The correct form is 'Seldom have we seen'.",
+      "difficulty": 10,
+      "toeicScore": "805-990"
+    },
+    {
+      "part": 7,
+      "question": "The passage suggests that the company's success is primarily due to:",
+      "options": [
+        "aggressive marketing campaigns",
+        "strategic partnerships and innovation",
+        "government subsidies",
+        "cost-cutting measures"
+      ],
+      "answer": 1,
+      "explanation": "Throughout the passage, the author emphasizes how strategic partnerships and innovative products drove the company's growth.",
+      "difficulty": 10,
+      "toeicScore": "805-990"
+    }
+  ]
+}

@@ -1,0 +1,658 @@
+{
+  "description": "多益 TOEIC 常考句型及易錯文法資料庫",
+  "version": "1.0",
+  "updated": "2026-02-22",
+  "totalEntries": 50,
+  "grammar": [
+    {
+      "id": 1,
+      "category": "詞性判斷",
+      "pattern": "Noun/Verb/Adjective/Adjective+ness (詞性變化)",
+      "chinese": "詞性判斷：名詞、動詞、形容詞、副詞的正確位置",
+      "examples": [
+        "The company's annual **shareholder** meeting will be held next Friday.",
+        "Our marketing team has been working **diligently** to prepare for the product launch.",
+        "The **implementation** of the new software system has significantly improved office productivity."
+      ],
+      "commonMistakes": "不要被字尾迷惑，如 -ly 結尾不一定是副詞（family 是名詞）",
+      "toeicLevel": "550-700"
+    },
+    {
+      "id": 2,
+      "category": "主詞動詞一致性",
+      "pattern": "Subject-Verb Agreement (集合名詞/Each/There be)",
+      "chinese": "主詞動詞一致性：單複數與時態的連動陷阱",
+      "examples": [
+        "The committee **is** scheduled to review the merger proposal tomorrow morning.",
+        "Each of the quarterly reports **contains** detailed financial analysis.",
+        "There **are** several important issues that need to be addressed."
+      ],
+      "commonMistakes": "集合名詞在商業語境中通常視為單數；不要被介系詞短語中的複數名詞迷惑",
+      "toeicLevel": "550-700"
+    },
+    {
+      "id": 3,
+      "category": "代名詞",
+      "pattern": "I/Me/My/Mine; Its/It's; Yourself/Themselves",
+      "chinese": "代名詞家族：主格、受格、所有格與反身代名詞的精準使用",
+      "examples": [
+        "The project manager asked my colleague and **me** to prepare the presentation.",
+        "The company is proud of **its** commitment to environmental sustainability.",
+        "The sales team members congratulated **themselves** on achieving the highest results."
+      ],
+      "commonMistakes": "its/it's 是最高頻混淆點；its 是所有格，it's 是 it is 的縮寫",
+      "toeicLevel": "550-700"
+    },
+    {
+      "id": 4,
+      "category": "動詞時態",
+      "pattern": "Present Perfect vs Past Simple / Past Perfect",
+      "chinese": "動詞時態：現在完成式、過去簡單式與過去完成式的區別",
+      "examples": [
+        "Our company **has made** significant progress in digital transformation since last year.",
+        "The financial director **had reviewed** the budget proposal before the meeting started.",
+        "We **have added** three major clients to our portfolio in the past six months."
+      ],
+      "commonMistakes": "不要見到過去時間就選過去式，要看動作與現在的關聯；注意 since/for/ago 的時態線索",
+      "toeicLevel": "600-800"
+    },
+    {
+      "id": 5,
+      "category": "被動語態",
+      "pattern": "be + Past Participle (can be done / has been done)",
+      "chinese": "主動與被動語態：判斷主詞是「做出動作」還是「接受動作」",
+      "examples": [
+        "All employee contracts **must be reviewed** by the HR department.",
+        "The new marketing strategy **was developed** after extensive market research.",
+        "Customer feedback forms **have been processed** online since the company launched."
+      ],
+      "commonMistakes": "不要忽略情態動詞和完成式的被動形式",
+      "toeicLevel": "600-800"
+    },
+    {
+      "id": 6,
+      "category": "不定詞與動名詞",
+      "pattern": "Verb + to do / Verb + doing",
+      "chinese": "不定詞與動名詞：決定動詞後面該接 To V 還是 V-ing",
+      "examples": [
+        "The board decided **to implement** the expansion plan.",
+        "The marketing team suggested **using** social media advertising.",
+        "We appreciate **your informing** us about the changes."
+      ],
+      "commonMistakes": "decide後接to V；suggest後接Ving；appreciate後接Ving；avoid/enjoy/mind後接Ving",
+      "toeicLevel": "600-800"
+    },
+    {
+      "id": 7,
+      "category": "分詞形容詞",
+      "pattern": "V-ing (令人...) vs V-ed (感到...)",
+      "chinese": "分詞作為形容詞：現在分詞與過去分詞當形容詞使用",
+      "examples": [
+        "The quarterly financial results were quite **encouraging**.",
+        "Many employees felt **excited** by the company's decision.",
+        "The presentation included several **surprising** statistics."
+      ],
+      "commonMistakes": "主詞是事物用V-ing(令人...)，主詞是人且表感受用V-ed(感到...)",
+      "toeicLevel": "650-800"
+    },
+    {
+      "id": 8,
+      "category": "分詞構句",
+      "pattern": "Having + P.P. / Being + P.P. / V-ing",
+      "chinese": "分詞構句：如何簡化句子，展現高階寫作邏輯",
+      "examples": [
+        "**Impressed** by the impressive sales figures, the management team approved additional funding.",
+        "**Having completed** the market research thoroughly, the product development team began designing.",
+        "The conference room was busy, with participants **reviewing** materials."
+      ],
+      "commonMistakes": "分詞構句的邏輯主詞必須與主句主詞一致；注意主動用V-ing，被動用V-ed",
+      "toeicLevel": "700-900"
+    },
+    {
+      "id": 9,
+      "category": "連接詞與介系詞",
+      "pattern": "Although + S + V / Despite + N / Because + S + V / Because of + N",
+      "chinese": "連接詞 vs. 介系詞：搞懂 Although/Despite, Because/Because of 的區別",
+      "examples": [
+        "**Despite** the challenging economic conditions, our company maintained steady growth.",
+        "The product launch was postponed **because** the marketing team needed more time.",
+        "**Due to** his extensive experience, Mr. Johnson was appointed as regional director."
+      ],
+      "commonMistakes": "Although/Even though 後接完整子句；Despite/Due to 後接名詞片語",
+      "toeicLevel": "600-800"
+    },
+    {
+      "id": 10,
+      "category": "關係子句",
+      "pattern": "who/whom/which/that/whose + clause",
+      "chinese": "關係子句：Who, Which, That, Whose 的選擇與省略時機",
+      "examples": [
+        "The consultant **whom** we hired from the Tokyo office has provided valuable insights.",
+        "The software program **whose** features include automated reporting has improved efficiency.",
+        "Employees **who** complete the training program by the deadline will receive a bonus."
+      ],
+      "commonMistakes": "whose不僅用於人，也可用於物表示所屬關係；whom在口語中可省略",
+      "toeicLevel": "650-850"
+    },
+    {
+      "id": 11,
+      "category": "形容詞與副詞",
+      "pattern": "Adjective vs Adverb (quick/quickly)",
+      "chinese": "形容詞與副詞：釐清修飾對象",
+      "examples": [
+        "The marketing presentation was delivered **remarkably** effectively.",
+        "After reviewing the proposals, the committee found them **surprisingly** comprehensive.",
+        "She speaks English **fluently** in international meetings."
+      ],
+      "commonMistakes": "不要看到 -ly 就認為是副詞；friendly, lovely, lonely 是形容詞",
+      "toeicLevel": "550-700"
+    },
+    {
+      "id": 12,
+      "category": "比較級",
+      "pattern": "more + adj than / as + adj as / the most",
+      "chinese": "比較級與最高級：than, as...as, the most 的正確用法",
+      "examples": [
+        "This project is **more challenging than** the previous one.",
+        "This is **the most comprehensive** report we have ever produced.",
+        "The new model performs **as well as** the old model in testing."
+      ],
+      "commonMistakes": "比較級修飾詞用 much/a lot/far；双重比较級要注意not any more",
+      "toeicLevel": "600-800"
+    },
+    {
+      "id": 13,
+      "category": "假設語氣",
+      "pattern": "If + Past ..., would/could + V",
+      "chinese": "假設語氣：與現在/過去事實相反的虛擬情境",
+      "examples": [
+        "**If** we **had** more time, we **would conduct** more thorough research.",
+        "**If** she **were** here, she **could help** us with the presentation.",
+        "I wish I **had** attended the conference last week."
+      ],
+      "commonMistakes": "與現在事實相反：用過去式；與過去事實相反：用過去完成式",
+      "toeicLevel": "700-900"
+    },
+    {
+      "id": 14,
+      "category": "倒裝句",
+      "pattern": "否定副詞 + 倒裝 (Never/Rarely/Seldom/Not only)",
+      "chinese": "倒裝句：否定副詞開頭的特殊句構",
+      "examples": [
+        "**Never before** have we seen such impressive results.",
+        "**Rarely does** the company offer such a generous benefits package.",
+        "**Not only** did we meet the target, but we also exceeded expectations."
+      ],
+      "commonMistakes": "倒裝句中主詞和動詞順序顛倒；助動詞放在主詞前",
+      "toeicLevel": "750-900"
+    },
+    {
+      "id": 15,
+      "category": "數量詞",
+      "pattern": "much/many, few/little, a few/a little",
+      "chinese": "名詞與數量詞：可數與不可數名詞的搭配",
+      "examples": [
+        "There is **much** work to be done before the deadline.",
+        "We have made **few** mistakes in this quarter.",
+        "We still have **a little** time to complete the project."
+      ],
+      "commonMistakes": "much/many 用於否定/疑問句；few/little 表負面意涵；a few/a little 表正面",
+      "toeicLevel": "550-700"
+    },
+    {
+      "id": 16,
+      "category": "使役動詞",
+      "pattern": "make/have/let + O + 原形動詞",
+      "chinese": "使役動詞：make, have, let 後接原形動詞",
+      "examples": [
+        "My boss **made** me work overtime last week.",
+        "I **had** my sister help me with the project.",
+        "Let **me** help you carry the heavy boxes."
+      ],
+      "commonMistakes": "使役動詞後接原形動詞（不加 to）；have + O + p.p. 表「讓...被做」",
+      "toeicLevel": "600-800"
+    },
+    {
+      "id": 17,
+      "category": "感官動詞",
+      "pattern": "see/watch/hear + O + V-ing / V原",
+      "chinese": "感官動詞：see, watch, hear, notice 後接 V-ing 或原形動詞",
+      "examples": [
+        "I saw him **running** in the park this morning.",
+        "She watched the movie **last night**.",
+        "I heard him **singing** in the shower.",
+        "Did you notice anyone **enter** the office?"
+      ],
+      "commonMistakes": "V-ing 表正在進行；V原 表動作完整發生過",
+      "toeicLevel": "600-800"
+    },
+    {
+      "id": 18,
+      "category": "連綴動詞",
+      "pattern": "appear/seem/become + 形容詞",
+      "chinese": "連綴動詞：appear, seem, become 後接形容詞（不用副詞）",
+      "examples": [
+        "The situation **seems** difficult to resolve.",
+        "The company **appears** confident about the future.",
+        "The demand **has become** increasingly high."
+      ],
+      "commonMistakes": "連綴動詞後接形容詞，不是副詞",
+      "toeicLevel": "600-750"
+    },
+    {
+      "id": 19,
+      "category": "介系詞片語",
+      "pattern": "in spite of / because of / due to / owing to",
+      "chinese": "介系詞片語：despite/due to/in spite of 的使用",
+      "examples": [
+        "**In spite of** the rain, we held the outdoor event.",
+        "The delay was **due to** technical difficulties.",
+        "**Owing to** circumstances beyond our control, we had to cancel."
+      ],
+      "commonMistakes": "due to / owing to / thanks to 通常作補語；in spite of / despite 後接名詞或V-ing",
+      "toeicLevel": "600-800"
+    },
+    {
+      "id": 20,
+      "category": "複合關係代名詞",
+      "pattern": "whoever/whatever/wherever + clause",
+      "chinese": "複合關係代名詞：whoever, whatever, whichever, wherever",
+      "examples": [
+        "**Whatever** you decide, we will support your choice.",
+        "**Whoever** is responsible for this mistake will be held accountable.",
+        "You may choose **whichever** option suits you best."
+      ],
+      "commonMistakes": "複合關係代名詞本身已包含先行詞，不需要再加先行詞",
+      "toeicLevel": "700-900"
+    },
+    {
+      "id": 21,
+      "category": "商業書信句型",
+      "pattern": "We would like to / Please find attached / Kindly revert",
+      "chinese": "商用英文書信常用句型",
+      "examples": [
+        "**We would like to** inform you that the meeting has been rescheduled.",
+        "**Please find attached** the report you requested.",
+        "**Kindly revert** at your earliest convenience."
+      ],
+      "commonMistakes": "商業書信中避免過度口語化；注意正式語氣",
+      "toeicLevel": "550-700"
+    },
+    {
+      "id": 22,
+      "category": "情態動詞",
+      "pattern": "must/have to/should/ought to/could/may",
+      "chinese": "情態動詞：表義務、建議、可能性、推測",
+      "examples": [
+        "You **must** submit the report by Friday.",
+        "You **should** consult with your manager before making a decision.",
+        "The project **could** be completed ahead of schedule."
+      ],
+      "commonMistakes": "must 表主觀義務；have to 表客觀義務；should 表建議",
+      "toeicLevel": "550-700"
+    },
+    {
+      "id": 23,
+      "category": "連接詞對",
+      "pattern": "both...and / either...or / neither...nor / not only...but also",
+      "chinese": "對等連接詞：both...and, either...or, neither...nor, not only...but also",
+      "examples": [
+        "**Both** the CEO **and** the CFO attended the meeting.",
+        "**Either** you **or** I need to present the findings.",
+        "**Neither** the manager **nor** the staff were satisfied with the outcome."
+      ],
+      "commonMistakes": "注意鄰近原則：動詞應與最接近的主詞一致",
+      "toeicLevel": "600-800"
+    },
+    {
+      "id": 24,
+      "category": "冠詞",
+      "pattern": "a/an/the/零冠詞",
+      "chinese": "冠詞的使用：a, an, the, 零冠詞",
+      "examples": [
+        "She is **a** university student studying business.",
+        "The United States is a major market for our products.",
+        "We meet **once a week** on Mondays."
+      ],
+      "commonMistakes": "a 用於子音開頭；an 用於母音開頭；特定時用 the；抽象名詞/複數通常不加冠詞",
+      "toeicLevel": "550-700"
+    },
+    {
+      "id": 25,
+      "category": "間接引語",
+      "pattern": "She said (that) she was busy. / He told me (that) he would come.",
+      "chinese": "間接引語：引述句的時態變化",
+      "examples": [
+        "He said (that) he **was** busy. (現在式→過去式)",
+        "She told me (that) she **would** attend the meeting. (will→would)",
+        "They mentioned that they **had finished** the project. (have→had)"
+      ],
+      "commonMistakes": "主句動詞為過去式時，從句時態要「倒退一步」",
+      "toeicLevel": "650-850"
+    },
+    {
+      "id": 26,
+      "category": "條件句",
+      "pattern": "If + Present..., will / Unless + 肯定 = If + 否定",
+      "chinese": "條件句：第一類條件句與 Unless 的使用",
+      "examples": [
+        "**If** you **finish** the report today, we **will review** it tomorrow.",
+        "**Unless** you submit the application, you cannot attend the program.",
+        "If it **rains** tomorrow, the event will be postponed."
+      ],
+      "commonMistakes": "Unless = If not，但語意略有不同",
+      "toeicLevel": "600-800"
+    },
+    {
+      "id": 27,
+      "category": "請求與建議句型",
+      "pattern": "Would you mind + V-ing? / Could you please + V?",
+      "chinese": "請求與建議的正式用法",
+      "examples": [
+        "**Would you mind** sending me the updated schedule?",
+        "**Could you please** clarify the requirements?",
+        "**I would recommend** contacting the supplier directly."
+      ],
+      "commonMistakes": "Would you mind 後接 V-ing；Could you please 後接原形動詞",
+      "toeicLevel": "600-800"
+    },
+    {
+      "id": 28,
+      "category": " Too...to / Enough...to",
+      "pattern": "too + adj to V / adj + enough to V",
+      "chinese": "Too...to 與 Enough...to 句型",
+      "examples": [
+        "The report is **too complex to understand** without proper training.",
+        "She is **experienced enough to handle** the project independently.",
+        "The deadline is too tight for us to complete the work."
+      ],
+      "commonMistakes": "too...to 表「太...而不能」；enough...to 表「足夠...可以」",
+      "toeicLevel": "600-800"
+    },
+    {
+      "id": 29,
+      "category": "It 強調句型",
+      "pattern": "It is/was + 強調部分 + that/who + 其餘",
+      "chinese": "It 強調句：It is...that/who",
+      "examples": [
+        "**It is** the marketing team **that** developed the new strategy.",
+        "**It was** last week **that** we signed the contract.",
+        "**It is** only by working together **that** we can succeed."
+      ],
+      "commonMistakes": "強調人時可用 who/that；強調其他用 that",
+      "toeicLevel": "700-900"
+    },
+    {
+      "id": 30,
+      "category": "現在分詞與過去分詞當形容詞",
+      "pattern": "interesting/interested, boring/bored, exciting/excited",
+      "chinese": "分詞形容詞：現在分詞與過去分詞的情感用法",
+      "examples": [
+        "The presentation was **interesting** and kept everyone's attention.",
+        "Many participants were **interested** in learning more about the product.",
+        "The news was **exciting** for the entire team."
+      ],
+      "commonMistakes": "V-ing 表「令人...的」（事物作主詞）；V-ed 表「感到...的」（人作主詞）",
+      "toeicLevel": "600-750"
+    },
+    {
+      "id": 31,
+      "category": "優先句型",
+      "pattern": "prior to / before / after / upon + V-ing",
+      "chinese": "時間順序表達：prior to, upon, after + V-ing",
+      "examples": [
+        "**Prior to** making any decision, please consult the guidelines.",
+        "**Upon** receiving the approval, we will begin the implementation.",
+        "**After** reviewing the proposal, we found several issues."
+      ],
+      "commonMistakes": "prior to / upon 後接 V-ing，等同於 before + 子句",
+      "toeicLevel": "650-850"
+    },
+    {
+      "id": 32,
+      "category": "對照與轉折",
+      "pattern": "however / nevertheless / whereas / while",
+      "chinese": "對照與轉折：however, whereas, while 的使用",
+      "examples": [
+        "The new model is more expensive; **however**, it offers better performance.",
+        "**Whereas** the first quarter showed growth, the second quarter declined.",
+        "**While** some prefer online meetings, others favor face-to-face discussions."
+      ],
+      "commonMistakes": "however 和 but 不能連用；however 可置句首/句中/句尾用分號隔開",
+      "toeicLevel": "650-850"
+    },
+    {
+      "id": 33,
+      "category": "結果與程度",
+      "pattern": "so...that / such...that / therefore / consequently",
+      "chinese": "結果與程度：so that, such that, therefore, consequently",
+      "examples": [
+        "The project was **so successful that** we exceeded all expectations.",
+        "**Such** was the demand **that** we had to increase production.",
+        "The server crashed; **therefore**, we lost some data."
+      ],
+      "commonMistakes": "such + (a) adj + N + that；so + adj/adv + that",
+      "toeicLevel": "650-850"
+    },
+    {
+      "id": 34,
+      "category": "省略與簡化",
+      "pattern": "If possible / When convenient / Unless otherwise stated",
+      "chinese": "省略與簡化結構：常見商業省略用法",
+      "examples": [
+        "Please send the report **if possible** by Friday.",
+        "We will contact you **when convenient** for a follow-up meeting.",
+        "All prices are subject to change **unless otherwise stated**."
+      ],
+      "commonMistakes": "省略句中保留了原句的含義，省略了主詞和be動詞",
+      "toeicLevel": "700-900"
+    },
+    {
+      "id": 35,
+      "category": "否定句",
+      "pattern": "No + N / Not + V / Never / Rarely / Seldom",
+      "chinese": "否定句型的使用：no, not, never, rarely, seldom",
+      "examples": [
+        "**No** changes will be made to the schedule.",
+        "We **do not** anticipate any delays in the project.",
+        "The company **rarely** experiences such technical issues."
+      ],
+      "commonMistakes": "no + N = not a/not any；否定的倒裝句要小心主詞動詞順序",
+      "toeicLevel": "600-800"
+    },
+    {
+      "id": 36,
+      "category": "雙重比較",
+      "pattern": "no more...than / not more...than / no less...than",
+      "chinese": "雙重比較結構：no more...than, not more...than",
+      "examples": [
+        "This project is **no more important than** the previous one. (兩者都不重要)",
+        "She is **not more talented than** her colleague. (她不比同事有天賦)",
+        "This solution is **no less effective than** the alternative."
+      ],
+      "commonMistakes": "no more...than = 兩者都否；not more...than = 程度較低",
+      "toeicLevel": "750-900"
+    },
+    {
+      "id": 37,
+      "category": "平行結構",
+      "pattern": "both...and / not only...but also +相同詞性",
+      "chinese": "平行結構：對等連接詞兩側需對等",
+      "examples": [
+        "The job requires **creativity and analytical skills**.",
+        "We need to **reduce costs and improve efficiency**.",
+        "She is responsible for **managing the team and coordinating projects**."
+      ],
+      "commonMistakes": "both A and B 中的 A 與 B 必須是相同詞性（名對名、動對動）",
+      "toeicLevel": "650-850"
+    },
+    {
+      "id": 38,
+      "category": "介系詞固定搭配",
+      "pattern": "depend on / consist of / approve of / insist on",
+      "chinese": "介系詞固定搭配：常見動詞+介系詞組合",
+      "examples": [
+        "The success of the project **depends on** effective communication.",
+        "The committee **consists of** five senior managers.",
+        "We **insist on** maintaining high quality standards."
+      ],
+      "commonMistakes": "注意每個動詞的特定介系詞搭配，不能混淆",
+      "toeicLevel": "600-800"
+    },
+    {
+      "id": 39,
+      "category": "主動表被動",
+      "pattern": "need/want/require + V-ing (表被動)",
+      "chinese": "主動形式表被動意義：need, want, require + V-ing",
+      "examples": [
+        "The car **needs washing** (= needs to be washed).",
+        "The report **requires reviewing** (= requires to be reviewed).",
+        "This job **wants doing** (= wants to be done)."
+      ],
+      "commonMistakes": "V-ing 主動形式表被動意義，等同於 to be p.p.",
+      "toeicLevel": "700-900"
+    },
+    {
+      "id": 40,
+      "category": "名詞當形容詞用",
+      "pattern": "business meeting / credit card / phone number",
+      "chinese": "複合名詞：名詞作形容詞修飾另一名詞",
+      "examples": [
+        "We have a **business meeting** scheduled for tomorrow.",
+        "Please provide your **credit card** information for payment.",
+        "The **phone number** is listed on our website."
+      ],
+      "commonMistakes": "複合形容詞通常用單數名詞（如 business meeting 非 businesses meeting）",
+      "toeicLevel": "550-700"
+    },
+    {
+      "id": 41,
+      "category": "進行式表未來",
+      "pattern": "be + V-ing (表未來計畫)",
+      "chinese": "進行式表未來：表已安排的未來計畫",
+      "examples": [
+        "We **are meeting** with the client next Monday.",
+        "The CEO **is traveling** to Asia next week.",
+        "I **am attending** the conference tomorrow afternoon."
+      ],
+      "commonMistakes": "be V-ing 表未來只用於已經安排好的計畫，非臨時決定",
+      "toeicLevel": "550-700"
+    },
+    {
+      "id": 42,
+      "category": "附加問句",
+      "pattern": "S + V, + don't/doesn't/didn't + S?",
+      "chinese": "附加問句：反問句的用法",
+      "examples": [
+        "You have reviewed the report, **haven't you**?",
+        "She can't attend the meeting, **can she**?",
+        "They were satisfied with the results, **weren't they**?"
+      ],
+      "commonMistakes": "附加問句的助動詞要看主要子句的時態和肯定/否定",
+      "toeicLevel": "600-800"
+    },
+    {
+      "id": 43,
+      "category": "連序形容詞",
+      "pattern": "Opinion-Size-Age-Shape-Color-Origin-Material-Purpose",
+      "chinese": "多個形容詞排列順序： opinion-size-age-shape-color-origin-material-purpose",
+      "examples": [
+        "a beautiful new small round brown French wooden writing desk",
+        "an expensive old rectangular black American leather traveling bag"
+      ],
+      "commonMistakes": "記住順序口訣：OSASCOMP（美麗的老小圓棕法木寫作桌）",
+      "toeicLevel": "700-900"
+    },
+    {
+      "id": 44,
+      "category": "同位語",
+      "pattern": "N, N (同位語) / N, which/who...",
+      "chinese": "同位語：名詞或名詞片語進一步說明前面的名詞",
+      "examples": [
+        "Mr. Johnson, **our new CEO**, has extensive experience in the industry.",
+        "The report, **which was completed yesterday**, shows positive results.",
+        "Tokyo, **the capital of Japan**, is a major business hub."
+      ],
+      "commonMistakes": "同位語可用逗號隔開，與關係子句類似但功能不同",
+      "toeicLevel": "700-900"
+    },
+    {
+      "id": 45,
+      "category": "虛主詞 It/There",
+      "pattern": "It is + adj + to V / There is/are + N",
+      "chinese": "虛主詞 It/There：形式主詞與存在句",
+      "examples": [
+        "**It is** important **to submit** the report on time.",
+        "**There is** no doubt that the project will succeed.",
+        "**It is** essential **that** the team work together."
+      ],
+      "commonMistakes": "It is important that + S + (should) V 是建議性格氣動詞",
+      "toeicLevel": "600-800"
+    },
+    {
+      "id": 46,
+      "category": "would rather/would prefer",
+      "pattern": "would rather + V原 / would prefer + to V",
+      "chinese": "would rather 與 would prefer 的用法",
+      "examples": [
+        "I **would rather** stay at home than go to the party.",
+        "She **would prefer** to work from home on Fridays.",
+        "They **would rather** not discuss the sensitive topic."
+      ],
+      "commonMistakes": "would rather 後接原形動詞；would prefer 後接 to + V",
+      "toeicLevel": "650-850"
+    },
+    {
+      "id": 47,
+      "category": "倍數表達",
+      "pattern": "twice as adj as / three times the N of",
+      "chinese": "倍數表達：倍數的各種說法",
+      "examples": [
+        "This building is **twice as tall as** that one.",
+        "Our sales are **three times what they were** last year.",
+        "The new model costs **twice the price of** the old one."
+      ],
+      "commonMistakes": "倍數表達：twice as...as / double / triple / times",
+      "toeicLevel": "650-850"
+    },
+    {
+      "id": 48,
+      "category": "although/though/even though",
+      "pattern": "although + S + V / despite + N / in spite of + N",
+      "chinese": "讓步狀語从句：although/despite/even though",
+      "examples": [
+        "**Although** the weather was bad, we continued the outdoor event.",
+        "**Despite** the difficulties, we achieved our goals.",
+        "**Even though** she was busy, she managed to attend the meeting."
+      ],
+      "commonMistakes": "although/even though 後接完整子句；despite/in spite of 後接名詞或V-ing",
+      "toeicLevel": "600-800"
+    },
+    {
+      "id": 49,
+      "category": "whether/if",
+      "pattern": "whether + to V / whether or not",
+      "chinese": "whether 與 if 的用法區別",
+      "examples": [
+        "I don't know **whether to accept** the job offer.",
+        "Please let me know **whether or not** you can attend.",
+        "The question is **whether** we should invest in new technology."
+      ],
+      "commonMistakes": "whether 可以直接加 to V；if 不能；whether or not 不可寫成 if or not",
+      "toeicLevel": "650-850"
+    },
+    {
+      "id": 50,
+      "category": "should/must/have to 表推測",
+      "pattern": "should have p.p. / must have p.p. / can't have p.p.",
+      "chinese": "情態動詞表推測：對過去/現在的推測",
+      "examples": [
+        "He **should have received** the email by now. (應該已收到)",
+        "She **must have forgotten** about the meeting. (肯定忘了)",
+        "They **can't have finished** the project already. (不可能已完成)"
+      ],
+      "commonMistakes": "should have p.p. 表「應該已經」；must have p.p. 表「肯定已經」；can't have p.p. 表「不可能已經」",
+      "toeicLevel": "750-900"
+    }
+  ]
+}
