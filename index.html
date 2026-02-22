@@ -202,7 +202,7 @@
 
     function updateScore() {
       const percentage = Math.round((score / (currentQuestion > 0 ? currentQuestion : 1)) * 100);
-      document.getElementById('scoreValue').textContent = score;
+      document.getElementById('currentScore').textContent = score;
       
       // 簡單的分数預估
       const estimate = Math.round(200 + (percentage * 7.9));
