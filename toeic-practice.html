@@ -84,7 +84,7 @@
         text: "Look at the picture. What do you see?",
         options: ["People working in a modern office.", "The window is closed.", "There are no documents.", "Employees having lunch."],
         answer: 0,
-        explanation: "圖片顯示現代辦公室，有筆電、咖啡杯和文件。"
+        explanation: "圖片顯示現代辦公室。"
       },
       {
         part: 1,
@@ -102,27 +102,27 @@
         answer: 0,
         explanation: "圖片顯示廚師正在烹飪。"
       },
-      // Part 2: 應答問題 (3題) - 正確格式：聽問題，選正確回應
+      // Part 2: 應答問題 (3題)
       {
         part: 2,
         question: "Could you pass me the stapler, please?",
         options: ["Sure, here you go.", "I don't know where it is.", "The meeting starts at 3 PM."],
         answer: 0,
-        explanation: "這是請求句。選項A「Sure, here you go.」是禮貌的回應。"
+        explanation: "這是請求句。選項A是禮貌的回應。"
       },
       {
         part: 2,
         question: "Thank you for helping me with the project.",
         options: ["You're welcome.", "I need more time.", "Let me check my schedule."],
         answer: 0,
-        explanation: "這是表達感謝。選項A「You're welcome.」是標準回應。"
+        explanation: "這是表達感謝。選項A是標準回應。"
       },
       {
         part: 2,
         question: "Would you like to join us for dinner tonight?",
         options: ["That sounds great! What time?", "I'm not hungry.", "I had dinner already."],
         answer: 0,
-        explanation: "這是邀請。選項A接受並詢問時間，是正確回應。"
+        explanation: "這是邀請。選項A接受並詢問時間。"
       },
       // Part 3: 簡短對話 (3題)
       {
@@ -130,21 +130,21 @@
         text: "W: Hi John, do you have a moment? M: Sure, what's up? W: The client requested some changes. M: That shouldn't be a problem. | Q: What are they discussing?",
         options: ["A project deadline change", "A new client", "A team party"],
         answer: 0,
-        explanation: "對話中提到客戶要求變更，所以是討論項目截止日期的變更。"
+        explanation: "對話提到客戶要求變更。"
       },
       {
         part: 3,
         text: "W: Excuse me, I reserved a room. M: May I have your name? W: It's under Smith. M: Yes, we have a double room ready. | Q: Where is this?",
         options: ["At a hotel", "At a restaurant", "At a library"],
         answer: 0,
-        explanation: "對話提到預訂房間和雙人房，這是發生在飯店。"
+        explanation: "對話提到預訂房間。"
       },
       {
         part: 3,
         text: "M: I'm going to the conference next week. W: What will you do there? M: I'll present our new product. | Q: What will the man do?",
         options: ["Give a presentation", "Organize the event", "Take notes"],
         answer: 0,
-        explanation: "男人說他會展示新產品，所以是進行簡報。"
+        explanation: "男人說他會展示新產品。"
       },
       // Part 4: 簡短獨白 (3題)
       {
@@ -152,251 +152,23 @@
         text: "Announcement: The company picnic this Saturday has been postponed to next Sunday due to weather. Please update your calendars. | Q: Why was it postponed?",
         options: ["Due to weather forecast", "Low attendance", "Budget issues"],
         answer: 0,
-        explanation: "公告說因為天氣預報，所以延期。"
+        explanation: "公告說因為天氣預報。"
       },
       {
         part: 4,
         text: "Museum: We are open from 9 AM to 5 PM, Tuesday to Sunday. Admission is $15 for adults. Flash photography is not allowed. | Q: When is the museum closed?",
         options: ["On Mondays", "On Sundays", "On holidays"],
         answer: 0,
-        explanation: "開放時間是週二到週日，所以週一閉館。"
+        explanation: "開放時間是週二到週日。"
       },
       {
         part: 4,
         text: "Flight announcement: We are experiencing turbulence due to weather. Please keep your seatbelts fastened. We expect to land on time. | Q: What should passengers do?",
         options: ["Keep seatbelts fastened", "Stand up", "Move to exit"],
         answer: 0,
-        explanation: "機長要求乘客繫好安全帶並留在座位上。"
+        explanation: "機長要求乘客繫好安全帶。"
       }
     ];
-        options: ["Keep seatbelts fastened", "Stand up", "Move to exit", "Request help"],
-        answer: 0,
-        explanation: "機長要求乘客繫好安全帶並留在座位上。"
-      }
-    ];
-      {
-        part: 2,
-        text: "Could you pass me the stapler, please?",
-        options: ["Sure, here you go.", "I don't know where it is.", "The meeting starts at 3 PM.", "I'll email you later."],
-        answer: 0,
-        explanation: "這句話是請求遞東西。選項A「Sure, here you go.」是禮貌的回應。"
-      },
-      {
-        part: 2,
-        text: "Thank you for helping me with the project.",
-        options: ["You're welcome.", "I need more time.", "Let me check my schedule.", "That's not my responsibility."],
-        answer: 0,
-        explanation: "這是表達感謝。選項A「You're welcome.」是標準回應。"
-      },
-      {
-        part: 2,
-        text: "I'm calling to inquire about your product prices.",
-        options: ["I'll transfer you to our sales department.", "Please speak more slowly.", "We're closed on Sundays.", "Don't mention it."],
-        answer: 0,
-        explanation: "這句話是詢問價格。選項A表示會轉接到銷售部門。"
-      },
-      // Part 3: 簡短對話 (3題)
-      {
-        part: 3,
-        text: "W: Hi John, do you have a moment? M: Sure, what's up? W: The client requested some changes. M: That shouldn't be a problem. | Q: What are they discussing?",
-        options: ["A project deadline change", "A new client", "A team party", "A budget increase"],
-        answer: 0,
-        explanation: "對話中提到客戶要求變更，所以是討論項目截止日期的變更。"
-      },
-      {
-        part: 3,
-        text: "W: Excuse me, I reserved a room. M: May I have your name? W: It's under Smith. M: Yes, we have a double room ready. | Q: Where is this?",
-        options: ["At a hotel", "At a restaurant", "At a library", "At a gym"],
-        answer: 0,
-        explanation: "對話提到預訂房間和雙人房，這是發生在飯店。"
-      },
-      {
-        part: 3,
-        text: "M: I'm going to the conference next week. W: What will you do there? M: I'll present our new product. | Q: What will the man do?",
-        options: ["Give a presentation", "Organize the event", "Take notes", "Interview people"],
-        answer: 0,
-        explanation: "男人說他會展示新產品，所以是進行簡報。"
-      },
-      // Part 4: 簡短獨白 (3題)
-      {
-        part: 4,
-        text: "Announcement: The company picnic this Saturday has been postponed to next Sunday due to weather. Please update your calendars. | Q: Why was it postponed?",
-        options: ["Due to weather forecast", "Low attendance", "Budget issues", "Venue problems"],
-        answer: 0,
-        explanation: "公告說因為天氣預報，所以延期。"
-      },
-      {
-        part: 4,
-        text: "Museum: We are open from 9 AM to 5 PM, Tuesday to Sunday. Admission is $15 for adults. Flash photography is not allowed. | Q: When is the museum closed?",
-        options: ["On Mondays", "On Sundays", "On holidays", "Never"],
-        answer: 0,
-        explanation: "開放時間是週二到週日，所以週一閉館。"
-      },
-      {
-        part: 4,
-        text: "Flight announcement: We are experiencing turbulence due to weather. Please keep your seatbelts fastened. We expect to land on time. | Q: What should passengers do?",
-        options: ["Keep seatbelts fastened", "Stand up", "Move to exit", "Request help"],
-        answer: 0,
-        explanation: "機長要求乘客繫好安全帶並留在座位上。"
-      }
-    ];
-      // Part 2: 應答問題 (Question-Response)
-      {
-        text: "Could you pass me the stapler, please?",
-        options: ["Sure, here you go.", "I don't know where it is.", "The meeting starts at 3 PM.", "I'll email you later."],
-        answer: 0,
-        explanation: "這句話是請求遞東西。選項A「Sure, here you go.」是禮貌的回應，同意幫忙遞訂書機。其他選項都不相關：B說不知道在哪、C說會議時間、D說會發郵件。"
-      },
-      {
-        text: "Thank you for helping me with the project.",
-        options: ["You're welcome.", "I need more time.", "Let me check my schedule.", "That's not my responsibility."],
-        answer: 0,
-        explanation: "這是表達感謝的句子。選項A「You're welcome.」是對感謝的標準回應。其他選項都與感謝無關：B需要更多時間、C查看日程、D不是我的責任。"
-      },
-      {
-        text: "I'm calling to inquire about your product prices.",
-        options: ["I'll transfer you to our sales department.", "Please speak more slowly.", "We're closed on Sundays.", "Don't mention it."],
-        answer: 0,
-        explanation: "這句話是詢問產品價格。選項A表示會轉接到銷售部門，這是對詢問價格的正確認真回應。其他選項都不相關：B請說慢點、C我們週日休息、D別客氣（用錯情境）。"
-      },
-      {
-        text: "Would you like to leave a message for Mr. Chen?",
-        options: ["Yes, please tell him to call me back.", "I already sent an email.", "The weather is nice today.", "That's very expensive."],
-        answer: 0,
-        explanation: "這是問是否要留訊息。選項A「Yes, please tell him to call me back.」是留訊息的標準回應。其他選項都不相關：B已經發了郵件、C天氣好、D太貴了。"
-      },
-      {
-        text: "We need to reschedule the meeting because I have a conflict.",
-        options: ["How about next Tuesday at the same time?", "I don't like meetings.", "The project is finished.", "Thank you for your call."],
-        answer: 0,
-        explanation: "這句話表示因為時間衝突需要重新安排會議。選項A提議下週二同一時間，是解決衝突的建議。B、C、D都與重新安排會議無關。"
-      },
-      {
-        text: "Could you elaborate on the quarterly results?",
-        options: ["Revenue increased by 15% compared to last year.", "I think we should stop.", "That's a great idea.", "Please hold on."],
-        answer: 0,
-        explanation: "這句話請求詳細說明季度業績。選項A提供了具體的營收數據（年增15%），正是詳細說明的回應。B、C、D都不符合請求說明的語境。"
-      },
-      {
-        text: "We should consider outsourcing the manufacturing process to reduce costs.",
-        options: ["That's an interesting proposal. Let's discuss the cost implications.", "I don't know anything about manufacturing.", "The weather is affecting production.", "We're not hiring right now."],
-        answer: 0,
-        explanation: "這句話是關於外包製造來降低成本的想法。選項A表示這是個有趣的提案，並建議討論成本影響，是正面的回應。B、C、D都與這個建議無關。"
-      },
-      {
-        text: "Given the budget constraints, how should we proceed with the marketing campaign?",
-        options: ["We could focus on digital marketing to maximize our reach within the available budget.", "I disagree with everything.", "The budget is unlimited.", "Marketing doesn't matter."],
-        answer: 0,
-        explanation: "這句話是在預算限制下詢問如何進行行銷活動。選項A建議專注數位行銷以在有限預算內最大化效益，是實質的建議。B、C、D都與問題無關或互相矛盾。"
-      },
-      {
-        text: "I appreciate your patience while I looked into that issue. It appears there was a system error on our end.",
-        options: ["Thank you for investigating. I understand these things happen.", "I want to speak to a manager immediately.", "That's unacceptable.", "When will it be fixed?"],
-        answer: 0,
-        explanation: "這句話是解釋問題原因是系統錯誤並道歉。選項A感謝對方調查並表示理解，是適當的回應。B、C、D都是不禮貌或不合適的反應。"
-      },
-      {
-        text: "We're looking for a vendor who can deliver high-quality components within a tight deadline while maintaining competitive pricing.",
-        options: ["Our company meets all those requirements. May I schedule a meeting to discuss details?", "We're too busy to help you.", "I don't know anything about that.", "Thank you for calling."],
-        answer: 0,
-        explanation: "這句話是尋找符合多個條件的供應商。選項A表示該公司符合所有要求並建議安排會議，是積極的回應。B、C、D都不符合業務開發的語境。"
-      },
-      {
-        text: "Thank you for calling Global Electronics. How may I help you?",
-        options: ["I'd like to speak with the manager.", "I'm looking for a new laptop.", "The meeting has been cancelled.", "I'll be there at 2 PM."],
-        answer: 0,
-        explanation: "這是標準的公司來電接待語。選項A表示想跟經理說話，是對「How may I help you?」的正確認真回應。B、C、D都與接待語的語境不符。"
-      },
-      {
-        text: "Could you please send me the report by email?",
-        options: ["Sure, I'll send it right away.", "I received your message yesterday.", "The meeting starts at 3.", "I'll call you later."],
-        answer: 0,
-        explanation: "這句話是請求發送報告。選項A「Sure, I'll send it right away.」是正面的答覆，表示會立即發送。其他選項都不相關。"
-      },
-      {
-        text: "What time does the train leave?",
-        options: ["It's about ten dollars.", "At 10:30 AM.", "Yes, I have a train ticket.", "The weather is nice."],
-        answer: 1,
-        explanation: "這句話詢問火車出發時間。選項B「At 10:30 AM.」直接回答了時間問題。A、C、D都與時間無關：多少錢、有車票、天氣好。"
-      },
-      // 電話對話 (Phone conversations)
-      {
-        text: "Hello, this is John from ABC Company. May I speak with Ms. Chen please?",
-        options: ["She's in a meeting right now.", "This is she. Who's calling?", "I'll connect you shortly.", "The line is busy."],
-        answer: 1,
-        explanation: "這句話是打電話找陳小姐。選項B「This is she. Who's calling?」表示「我就是，請問你是哪位？」這是找某人時的標準回應。A、C、D都是在對方不在時的回應。"
-      },
-      {
-        text: "I'm sorry, but Mr. Smith is not available at the moment. Would you like to leave a message?",
-        options: ["Yes, please tell him to call me back.", "I'll try again later.", "That's fine, thank you.", "Can you connect me to sales?"],
-        answer: 0,
-        explanation: "這句話表示史密斯先生不在，詢問是否要留訊息。選項A「Yes, please tell him to call me back.」是留訊息的標準回應。其他選項沒有回應留訊息的請求。"
-      },
-      {
-        text: "Thank you for holding. Let me transfer you to our customer service department.",
-        options: ["I need to make a complaint.", "Please hold on.", "Thank you, I appreciate your help.", "I'll wait online."],
-        answer: 2,
-        explanation: "這句話表示要轉接到客服部門。選項C「Thank you, I appreciate your help.」是對方幫忙轉接的適當回應。A、B、D都不符合這個語境。"
-      },
-      {
-        text: "Good morning, Tech Support. How can I assist you today?",
-        options: ["My computer is not working properly.", "I want to buy a new computer.", "The store opens at 9 AM.", "I'll visit tomorrow."],
-        answer: 0,
-        explanation: "這是技術支援部門的接待語。選項A「My computer is not working properly.」是向技術支援報告問題的正確方式。B、C、D都不符合技術支援的語境。"
-      },
-      // 詢問資訊 (Information requests)
-      {
-        text: "Excuse me, could you tell me where the conference room is?",
-        options: ["It's on the second floor.", "The meeting starts at 2 PM.", "Yes, I know the way.", "The room is large."],
-        answer: 0,
-        explanation: "這句話詢問會議室位置。選項A「It's on the second floor.」直接回答了位置問題。B、C、D都沒有提供位置的資訊。"
-      },
-      {
-        text: "What are your office hours?",
-        options: ["We open at 8 AM and close at 6 PM.", "The staff is very friendly.", "Yes, we are open today.", "It's about 30 minutes away."],
-        answer: 0,
-        explanation: "這句話詢問營業時間。選項A提供了具體的營業時間（上午8點到下午6點）。B、C、D都沒有回答營業時間。"
-      },
-      {
-        text: "Do you have any information about the upcoming training program?",
-        options: ["It's scheduled for next week.", "Yes, I can email you the details.", "The program is very popular.", "I attended last year."],
-        answer: 1,
-        explanation: "這句話詢問培訓計畫的資訊。選項B表示可以email給對方詳細資訊，是提供資訊的適當回應。A、C、D雖然與培訓相關，但不是最完整的回應。"
-      },
-      {
-        text: "Could you give me directions to the nearest subway station?",
-        options: ["Turn left at the traffic light and walk for five minutes.", "The subway is very convenient.", "I prefer taking a bus.", "It's about a mile from here."],
-        answer: 0,
-        explanation: "這句話詢問到最近地鐵站的方向。選項A提供了具體的方向指示（紅綠燈左轉，步行5分鐘）。B、C、D都沒有提供方向指引。"
-      },
-      // 建議與意見 (Suggestions and opinions)
-      {
-        text: "I think we should reschedule the meeting. What do you think?",
-        options: ["I agree, let's move it to next week.", "The meeting room is available.", "Everyone will attend.", "I'll send the invitations."],
-        answer: 0,
-        explanation: "這句話是建議重新安排會議並詢問意見。選項A表示同意並提議改到下週，是對建議的正面回應。B、C、D都沒有回應「重新安排」的建議。"
-      },
-      {
-        text: "Why don't we take a break and continue tomorrow?",
-        options: ["That's a good idea.", "I'm not tired yet.", "We need to finish today.", "The break is too long."],
-        answer: 0,
-        explanation: "這句話是提議休息並明天繼續。選項A「That's a good idea.」是對建議的贊同回應。B、C、D都是反對或不符合的意見。"
-      },
-      {
-        text: "In my opinion, we should invest more in marketing.",
-        options: ["I see your point, but we have a limited budget.", "The marketing team is excellent.", "Our products are the best.", "Sales have increased recently."],
-        answer: 0,
-        explanation: "這句話表達了對行銷投資的意見。選項A表示理解觀點但提出預算限制，是討論意見的適當回應。B、C、D都沒有回應投資的建議。"
-      },
-      {
-        text: "Have you considered using a different supplier?",
-        options: ["No, we are satisfied with the current one.", "Yes, we're looking into alternatives.", "The supplier is very reliable.", "Prices have gone up."],
-        answer: 1,
-        explanation: "這句話是詢問是否考慮過更換供應商。選項B表示正在考慮其他替代方案，是對這個建議的回應。A、C、D都沒有直接回應「考慮更換供應商」的問題。"
-      }
-    ];
-
-    let currentQuestion = 0;
 
     // 隨機排序題目
     function shuffleArray(array) {
