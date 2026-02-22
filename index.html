@@ -201,11 +201,14 @@
     }
 
     function updateScore() {
-      const percentage = Math.round((score / (currentQuestion > 0 ? currentQuestion : 1)) * 100);
       document.getElementById('currentScore').textContent = score;
       document.getElementById('totalQuestions').textContent = questions.length;
       
-      // 簡單的分数預估
+      // 計算正確率
+      const total = currentQuestion > 0 ? currentQuestion : 1;
+      const percentage = Math.round((score / total) * 100);
+      
+      // 預估分數
       const estimate = Math.round(200 + (percentage * 7.9));
       document.getElementById('scoreEstimate').textContent = '預估多益分數: ' + estimate + ' - ' + (estimate + 45) + ' 分';
     }
