@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOEIC 聽力練習</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; }
+    .question { background: #f5f5f5; padding: 15px; margin: 10px 0; border-radius: 8px; }
+    .question h3 { margin-top: 0; }
+    button { padding: 10px 20px; margin: 5px; cursor: pointer; border: none; border-radius: 5px; }
+    .play-btn { background: #4CAF50; color: white; }
+    .check-btn { background: #2196F3; color: white; }
+    .options button { display: block; width: 100%; margin: 5px 0; text-align: left; background: #fff; border: 1px solid #ddd; }
+    .options button:hover { background: #e3f2fd; }
+    .correct { background: #c8e6c9 !important; }
+    .wrong { background: #ffcdd2 !important; }
+    #result { margin-top: 20px; font-size: 18px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>📝 TOEIC 聽力練習</h1>
+  <p>點擊「播放題目」聆聽問題，然後選擇正確答案</p>
+  
+  <div id="quiz"></div>
+  <div id="result"></div>
+
+  <script>
+    const questions = [
+      {
+        text: "Thank you for calling Global Electronics. How may I help you?",
+        options: ["I'd like to speak with the manager.", "I'm looking for a new laptop.", "The meeting has been cancelled.", "I'll be there at 2 PM."],
+        answer: 0
+      },
+      {
+        text: "Could you please send me the report by email?",
+        options: ["Sure, I'll send it right away.", "I received your message yesterday.", "The meeting starts at 3.", "I'll call you later."],
+        answer: 0
+      },
+      {
+        text: "What time does the train leave?",
+        options: ["It's about ten dollars.", "At 10:30 AM.", "Yes, I have a train ticket.", "The weather is nice."],
+        answer: 1
+      }
+    ];
+
+    let currentQuestion = 0;
+    let score = 0;
+
+    function speak(text) {
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'en-US';
+      utterance.rate = 0.8;
+      speechSynthesis.speak(utterance);
+    }
+
+    function loadQuestion() {
+      if (currentQuestion >= questions.length) {
+        document.getElementById('quiz').innerHTML = `
+          <h2>測驗完成！</h2>
+          <p>得分: ${score} / ${questions.length}</p>
+          <button class="play-btn" onclick="location.reload()">重新開始</button>
+        `;
+        return;
+      }
+
+      const q = questions[currentQuestion];
+      document.getElementById('quiz').innerHTML = `
+        <div class="question">
+          <h3>題目 ${currentQuestion + 1} / ${questions.length}</h3>
+          <button class="play-btn" onclick="speak('${q.text}')">🔊 播放題目</button>
+          <div class="options">
+            ${q.options.map((opt, i) => 
+              `<button onclick="checkAnswer(${i})">${String.fromCharCode(65+i)}. ${opt}</button>`
+            ).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    function checkAnswer(selected) {
+      const q = questions[currentQuestion];
+      const buttons = document.querySelectorAll('.options button');
+      
+      if (selected === q.answer) {
+        buttons[selected].classList.add('correct');
+        score++;
+      } else {
+        buttons[selected].classList.add('wrong');
+        buttons[q.answer].classList.add('correct');
+      }
+
+      setTimeout(() => {
+        currentQuestion++;
+        loadQuestion();
+      }, 1500);
+    }
+
+    loadQuestion();
+  </script>
+</body>
+</html>
