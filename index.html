@@ -22,7 +22,12 @@
   <h1>📝 TOEIC 聽力練習</h1>
   <p>點擊「播放題目」聆聽問題，然後選擇正確答案</p>
   
-  <div id="quiz"></div>
+  <div id="quiz">
+    <div style="text-align: center; padding: 40px;">
+      <h2>🎧 TOEIC 聽力練習</h2>
+      <button class="play-btn" onclick="loadQuestion()" style="font-size: 18px; padding: 15px 30px;">開始測驗 ▶️</button>
+    </div>
+  </div>
   <div id="result"></div>
 
   <script>
@@ -211,7 +216,7 @@
       }, 1500);
     }
 
-    loadQuestion();
+    // Remove auto-load, user clicks "開始測驗" button
   </script>
 </body>
 </html>
