@@ -76,6 +76,9 @@
     
     function updateSpeed() {
       speechRate = parseFloat(document.getElementById('speedSlider').value);
+      document.getElementById('speedValue').textContent = speechRate.toFixed(1);
+    }
+
     const questions = [
       // Part 1: 照片描述 (3題)
       {
@@ -170,6 +173,10 @@
       }
     ];
 
+    let currentQuestion = 0;
+    let score = 0;
+    let answered = false;
+
     // 隨機排序題目
     function shuffleArray(array) {
       for (let i = array.length - 1; i > 0; i--) {
@@ -179,8 +186,6 @@
       return array;
     }
     shuffleArray(questions);
-    let score = 0;
-    let answered = false;
 
     function speak(text) {
       const utterance = new SpeechSynthesisUtterance(text);
@@ -190,49 +195,23 @@
     }
 
     function updateProgress() {
-      const progress = Math.round((currentQuestion / questions.length) * 100);
+      const progress = ((currentQuestion) / questions.length) * 100;
       document.getElementById('progressBar').style.width = progress + '%';
-      document.getElementById('progressText').textContent = '進度: ' + progress + '%';
-      document.getElementById('totalQuestions').textContent = questions.length;
+      document.getElementById('progressText').textContent = '進度: ' + currentQuestion + ' / ' + questions.length;
     }
 
     function updateScore() {
-      document.getElementById('currentScore').textContent = score;
+      const percentage = Math.round((score / (currentQuestion > 0 ? currentQuestion : 1)) * 100);
+      document.getElementById('scoreValue').textContent = score;
       
-      // 計算預估多益分數
-      const percentage = (score / questions.length) * 100;
-      let toeicScore;
-      
-      if (percentage >= 90) {
-        toeicScore = "900-990";
-      } else if (percentage >= 80) {
-        toeicScore = "800-895";
-      } else if (percentage >= 70) {
-        toeicScore = "700-795";
-      } else if (percentage >= 60) {
-        toeicScore = "600-695";
-      } else if (percentage >= 50) {
-        toeicScore = "500-595";
-      } else if (percentage >= 40) {
-        toeicScore = "400-495";
-      } else if (percentage >= 30) {
-        toeicScore = "300-395";
-      } else {
-        toeicScore = "200-295";
-      }
-      
-      document.getElementById('scoreEstimate').textContent = '預估多益分數: ' + toeicScore + ' (based on ' + questions.length + ' questions)';
+      // 簡單的分数預估
+      const estimate = Math.round(200 + (percentage * 7.9));
+      document.getElementById('scoreEstimate').textContent = '預估多益分數: ' + estimate + ' - ' + (estimate + 45) + ' 分';
     }
 
     function loadQuestion() {
       if (currentQuestion >= questions.length) {
         document.getElementById('quiz').innerHTML = `
-        <div class="question-image">
-          ${
-            q.image ? `<img src="${q.image}" alt="Question image" style="max-width:100%; border-radius:8px; margin-bottom:15px;">` : ''
-          }
-        </div>
-
           <div class="question">
             <h2>🎉 測驗完成！</h2>
             <p>最終得分: ${score} / ${questions.length}</p>
@@ -249,16 +228,15 @@
       updateProgress();
       updateScore();
 
+      const questionText = q.question || q.text;
+
       document.getElementById('quiz').innerHTML = `
         <div class="question-image">
-          ${
-            q.image ? `<img src="${q.image}" alt="Question image" style="max-width:100%; border-radius:8px; margin-bottom:15px;">` : ''
-          }
+          ${q.image ? `<img src="${q.image}" alt="Question image" style="max-width:100%; border-radius:8px; margin-bottom:15px;">` : ''}
         </div>
-
         <div class="question">
           <h3>題目 ${currentQuestion + 1} / ${questions.length}</h3>
-          <button class="play-btn" onclick="speak('${q.question || q.text}')">🔊 播放題目</button>
+          <button class="play-btn" onclick="speak('${questionText.replace(/'/g, "\\'")}')">🔊 播放題目</button>
           <div class="options" id="optionsContainer">
             ${q.options.map((opt, i) => 
               `<button onclick="checkAnswer(${i})" id="opt${i}">${String.fromCharCode(65+i)}. ${opt}</button>`
@@ -286,29 +264,16 @@
       // 顯示解析
       const explanationDiv = document.createElement('div');
       explanationDiv.className = 'explanation';
-      explanationDiv.innerHTML = `
-        <strong>📝 解析：</strong><br>
-        <strong>正確答案：</strong>${String.fromCharCode(65+q.answer)}<br>
-        <strong>解釋：</strong>${q.explanation}
-      `;
-      document.getElementById('optionsContainer').appendChild(explanationDiv);
+      explanationDiv.innerHTML = '<strong>📝 解析：</strong>' + q.explanation;
+      document.querySelector('.question').appendChild(explanationDiv);
 
       updateScore();
 
-      // 顯示下一題按鈕
-      const nextBtn = document.createElement('button');
-      nextBtn.className = 'next-btn';
-      nextBtn.textContent = '下一題 ➡️';
-      nextBtn.onclick = () => {
+      setTimeout(() => {
         currentQuestion++;
         loadQuestion();
-      };
-      explanationDiv.appendChild(nextBtn);
+      }, 3000);
     }
-
-    // 初始化進度條和分數
-    updateProgress();
-    updateScore();
   </script>
 </body>
 </html>
