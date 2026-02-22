@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOEIC 聽力練習</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; }
+    .question { background: #f5f5f5; padding: 15px; margin: 10px 0; border-radius: 8px; }
+    .question h3 { margin-top: 0; }
+    button { padding: 10px 20px; margin: 5px; cursor: pointer; border: none; border-radius: 5px; }
+    .play-btn { background: #4CAF50; color: white; }
+    .check-btn { background: #2196F3; color: white; }
+    .options button { display: block; width: 100%; margin: 5px 0; text-align: left; background: #fff; border: 1px solid #ddd; }
+    .options button:hover { background: #e3f2fd; }
+    .correct { background: #c8e6c9 !important; }
+    .wrong { background: #ffcdd2 !important; }
+    #result { margin-top: 20px; font-size: 18px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>📝 TOEIC 聽力練習</h1>
+  <p>點擊「播放題目」聆聽問題，然後選擇正確答案</p>
+  
+  <div id="quiz"></div>
+  <div id="result"></div>
+
+  <script>
+    const questions = [
+      // Part 2: 應答問題 (Question-Response)
+      {
+        text: "Could you pass me the stapler, please?",
+        options: ["Sure, here you go.", "I don't know where it is.", "The meeting starts at 3 PM.", "I'll email you later."],
+        answer: 0
+      },
+      {
+        text: "Thank you for helping me with the project.",
+        options: ["You're welcome.", "I need more time.", "Let me check my schedule.", "That's not my responsibility."],
+        answer: 0
+      },
+      {
+        text: "I'm calling to inquire about your product prices.",
+        options: ["I'll transfer you to our sales department.", "Please speak more slowly.", "We're closed on Sundays.", "Don't mention it."],
+        answer: 0
+      },
+      {
+        text: "Would you like to leave a message for Mr. Chen?",
+        options: ["Yes, please tell him to call me back.", "I already sent an email.", "The weather is nice today.", "That's very expensive."],
+        answer: 0
+      },
+      {
+        text: "We need to reschedule the meeting because I have a conflict.",
+        options: ["How about next Tuesday at the same time?", "I don't like meetings.", "The project is finished.", "Thank you for your call."],
+        answer: 0
+      },
+      {
+        text: "Could you elaborate on the quarterly results?",
+        options: ["Revenue increased by 15% compared to last year.", "I think we should stop.", "That's a great idea.", "Please hold on."],
+        answer: 0
+      },
+      {
+        text: "We should consider outsourcing the manufacturing process to reduce costs.",
+        options: ["That's an interesting proposal. Let's discuss the cost implications.", "I don't know anything about manufacturing.", "The weather is affecting production.", "We're not hiring right now."],
+        answer: 0
+      },
+      {
+        text: "Given the budget constraints, how should we proceed with the marketing campaign?",
+        options: ["We could focus on digital marketing to maximize our reach within the available budget.", "I disagree with everything.", "The budget is unlimited.", "Marketing doesn't matter."],
+        answer: 0
+      },
+      {
+        text: "I appreciate your patience while I looked into that issue. It appears there was a system error on our end.",
+        options: ["Thank you for investigating. I understand these things happen.", "I want to speak to a manager immediately.", "That's unacceptable.", "When will it be fixed?"],
+        answer: 0
+      },
+      {
+        text: "We're looking for a vendor who can deliver high-quality components within a tight deadline while maintaining competitive pricing.",
+        options: ["Our company meets all those requirements. May I schedule a meeting to discuss details?", "We're too busy to help you.", "I don't know anything about that.", "Thank you for calling."],
+        answer: 0
+      }
+    ];
+      {
+        text: "Thank you for calling Global Electronics. How may I help you?",
+        options: ["I'd like to speak with the manager.", "I'm looking for a new laptop.", "The meeting has been cancelled.", "I'll be there at 2 PM."],
+        answer: 0
+      },
+      {
+        text: "Could you please send me the report by email?",
+        options: ["Sure, I'll send it right away.", "I received your message yesterday.", "The meeting starts at 3.", "I'll call you later."],
+        answer: 0
+      },
+      {
+        text: "What time does the train leave?",
+        options: ["It's about ten dollars.", "At 10:30 AM.", "Yes, I have a train ticket.", "The weather is nice."],
+        answer: 1
+      },
+      // 電話對話 (Phone conversations) - 3題
+      {
+        text: "Hello, this is John from ABC Company. May I speak with Ms. Chen please?",
+        options: ["She's in a meeting right now.", "This is she. Who's calling?", "I'll connect you shortly.", "The line is busy."],
+        answer: 1
+      },
+      {
+        text: "I'm sorry, but Mr. Smith is not available at the moment. Would you like to leave a message?",
+        options: ["Yes, please tell him to call me back.", "I'll try again later.", "That's fine, thank you.", "Can you connect me to sales?"],
+        answer: 0
+      },
+      {
+        text: "Thank you for holding. Let me transfer you to our customer service department.",
+        options: ["I need to make a complaint.", "Please hold on.", "Thank you, I appreciate your help.", "I'll wait online."],
+        answer: 2
+      },
+      {
+        text: "Good morning, Tech Support. How can I assist you today?",
+        options: ["My computer is not working properly.", "I want to buy a new computer.", "The store opens at 9 AM.", "I'll visit tomorrow."],
+        answer: 0
+      },
+      // 詢問資訊 (Information requests) - 3題
+      {
+        text: "Excuse me, could you tell me where the conference room is?",
+        options: ["It's on the second floor.", "The meeting starts at 2 PM.", "Yes, I know the way.", "The room is large."],
+        answer: 0
+      },
+      {
+        text: "What are your office hours?",
+        options: ["We open at 8 AM and close at 6 PM.", "The staff is very friendly.", "Yes, we are open today.", "It's about 30 minutes away."],
+        answer: 0
+      },
+      {
+        text: "Do you have any information about the upcoming training program?",
+        options: ["It's scheduled for next week.", "Yes, I can email you the details.", "The program is very popular.", "I attended last year."],
+        answer: 1
+      },
+      {
+        text: "Could you give me directions to the nearest subway station?",
+        options: ["Turn left at the traffic light and walk for five minutes.", "The subway is very convenient.", "I prefer taking a bus.", "It's about a mile from here."],
+        answer: 0
+      },
+      // 建議與意見 (Suggestions and opinions) - 3題
+      {
+        text: "I think we should reschedule the meeting. What do you think?",
+        options: ["I agree, let's move it to next week.", "The meeting room is available.", "Everyone will attend.", "I'll send the invitations."],
+        answer: 0
+      },
+      {
+        text: "Why don't we take a break and continue tomorrow?",
+        options: ["That's a good idea.", "I'm not tired yet.", "We need to finish today.", "The break is too long."],
+        answer: 0
+      },
+      {
+        text: "In my opinion, we should invest more in marketing.",
+        options: ["I see your point, but we have a limited budget.", "The marketing team is excellent.", "Our products are the best.", "Sales have increased recently."],
+        answer: 0
+      },
+      {
+        text: "Have you considered using a different supplier?",
+        options: ["No, we are satisfied with the current one.", "Yes, we're looking into alternatives.", "The supplier is very reliable.", "Prices have gone up."],
+        answer: 1
+      }
+    ];
+
+    let currentQuestion = 0;
+    let score = 0;
+
+    function speak(text) {
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'en-US';
+      utterance.rate = 0.8;
+      speechSynthesis.speak(utterance);
+    }
+
+    function loadQuestion() {
+      if (currentQuestion >= questions.length) {
+        document.getElementById('quiz').innerHTML = `
+          <h2>測驗完成！</h2>
+          <p>得分: ${score} / ${questions.length}</p>
+          <button class="play-btn" onclick="location.reload()">重新開始</button>
+        `;
+        return;
+      }
+
+      const q = questions[currentQuestion];
+      document.getElementById('quiz').innerHTML = `
+        <div class="question">
+          <h3>題目 ${currentQuestion + 1} / ${questions.length}</h3>
+          <button class="play-btn" onclick="speak('${q.text}')">🔊 播放題目</button>
+          <div class="options">
+            ${q.options.map((opt, i) => 
+              `<button onclick="checkAnswer(${i})">${String.fromCharCode(65+i)}. ${opt}</button>`
+            ).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    function checkAnswer(selected) {
+      const q = questions[currentQuestion];
+      const buttons = document.querySelectorAll('.options button');
+      
+      if (selected === q.answer) {
+        buttons[selected].classList.add('correct');
+        score++;
+      } else {
+        buttons[selected].classList.add('wrong');
+        buttons[q.answer].classList.add('correct');
+      }
+
+      setTimeout(() => {
+        currentQuestion++;
+        loadQuestion();
+      }, 1500);
+    }
+
+    loadQuestion();
+  </script>
+</body>
+</html>
